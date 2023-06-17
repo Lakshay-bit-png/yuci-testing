@@ -1,0 +1,79 @@
+body{display: grid;
+    place-content: center;
+    width:100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth ;
+    font-family:'Ubuntu'}
+@media only screen and (min-width:570px){
+form{
+    
+   }
+.start{
+    margin-top:30px;}
+
+
+.signin-card{
+            height:400px;
+            background:url("/Users/lakshay/Downloads/work/web_back/yuciTesting/static/mycourses/media/yuciLogo.3f3f703ae71919f35abe.png") 25px 10px;
+;
+            background-size:120px 100px;
+            background-repeat: no-repeat;
+            
+            width:600px;
+            box-shadow:6px 6px 20px 1px rgb(108, 93, 93);
+            background-color:rgb(243, 241, 241);           
+            border-radius:20px;
+            transition: 0.3s;
+          
+        }
+
+ .header{font-size:35px;
+    text-align:center;
+    color:rgb(45, 18, 222);
+    font-weight:bolder;}  
+.already{text-align:center;
+        margin-top:20px;}
+.already button{border:1.5px solid rgb(177, 7, 75);
+                border-radius:10px;
+                background-color:rgb(156, 13, 156);
+                color:white;
+                transition:0.35s;
+                font-size:15px;
+                padding:5px 10px 5px 10px;}
+.already button:hover{background-color:white;
+                    color:black;}
+
+.getinp{margin-top:20px;
+        }
+.label{position:relative;
+            left:120px;
+            bottom:5px;
+            color:rgb(91, 51, 91);
+            
+            }
+.Name{text-align:center;
+    margin-top:5px;
+    }
+.Name input{position:relative;
+    width:360px;
+    height:40px;
+    border-radius:6px;
+    border: 1px solid rgb(181, 181, 181);
+ }
+.submit{text-align:center;
+        margin-top:30px;}
+.submit-btn{width:120px;
+            height: 35px;
+            font-size:18px;
+            border:1px solid rgb(145, 15, 185);
+            background-color:rgb(99, 33, 160);
+            color:white;
+            transition:0.3s;
+            border-radius:10px;}
+.submit-btn:hover{background-color:rgb(255, 255, 255);
+                  color:rgb(0, 0, 0);} 
+
+
+
+
+}   

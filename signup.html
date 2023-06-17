@@ -1,0 +1,85 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="signupstyle.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+      
+       <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+    </head>
+    <body>
+
+
+        <div class="signin-card" id="in">
+            
+            <div class="start">
+                <div class="header">Sign-In</div>
+                
+                <br>
+           
+                <div class="getinp">
+                    <label class="label" for="2nd">Email-Id (G-mail)</label>
+                    <div class="Name"><input id="email" type="email" placeholder="johndoe@example.com" name="Emailid" required></div>
+                </div>
+                
+                <div class="getinp">
+                    <label class="label" for="4th">Password:</label>
+                    <div class="Name"><input id="password" type="password" minlength="8" placeholder="********" name="Passwordinp" required></div>
+                </div>
+                <div class="submit">
+                    <button class="submit-btn" onclick="signIn()">Sign-In</button>
+
+                </div>
+     
+            </div>
+            <div class="already">Don't have an account ? <button onclick="signupopen('in','up')" id="bt1">Sign-Up</button></div>
+        </div>
+        
+
+        <div class="signin-card" style="z-index:2;visibility:hidden;height:0px;" id="up" >
+            
+            <div class="start">
+                <div class="header">Sign-Up</div>
+                
+                <br>
+   
+                <div class="getinp">
+                    <label class="label" for="2nd">Full Name</label>
+                    <div class="Name"><input id="U1" type="text" placeholder="John Doe" name="Name" required></div>
+                </div>
+                <div class="getinp">
+                    <label class="label" for="2nd">Email-Id (G-mail)</label>
+                    <div class="Name"><input id="email2" type="email" placeholder="johndoe@example.com" name="Email" required></div>
+                </div>
+                <div class="getinp">
+                    <label class="label" for="4th">Mobile:</label>
+                    <div class="Name"><input id="U3" type="tel" minlength="8" placeholder="92XXXXXX11" name="Mobile" pattern="[0-9]{10}" required></div>
+                </div>
+                <div class="getinp">
+                    <label class="label" for="4th">Password:</label>
+                    <div class="Name"><input id="password2" type="password" minlength="8" placeholder="********" name="Password" required></div>
+                </div>
+                <div class="submit">
+                    <button  class="submit-btn" onclick="signUp()" >Sign-Up</button>
+
+                </div>
+         
+
+            </div>
+            <div class="already">Already have an account ? <button onclick="signupopen('up','in')" id="bt2">Sign-In</button></div>
+        </div>
+
+       
+
+
+            
+            
+            
+       
+         
+        <script src="auth.js"></script>   
+    
+    </body>
+</html>

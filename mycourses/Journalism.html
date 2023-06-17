@@ -34,77 +34,11 @@
 <body>
     <div id="root">
         <div class="App" id="App">
-            <div>
-                <div class="bm-overlay"
-                    style="position: fixed; z-index: 1000; width: 100%; height: 100%; background:black; opacity: 0; transform: translate3d(100%, 0px, 0px); transition: opacity 0.3s ease 0s, transform 0s ease 0.3s;">
-                </div>
-                <div>
-                    <div class="bm-burger-button"
-                        style="z-index: 1000; position: absolute; width: 36px; height: 30px; left: 40px; top: 47px;">
-                        <button type="button" id="react-burger-menu-btn"
-                            style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; font-size: 0px; background: transparent; cursor: pointer;">Open
-                            Menu</button><span><span class="bm-burger-bars"
-                                style="position: absolute; height: 20%; left: 0px; right: 0px; top: 0%; opacity: 1; background: black; border-radius: 8px;"></span><span
-                                class="bm-burger-bars"
-                                style="position: absolute; height: 20%; left: 0px; right: 0px; top: 40%; opacity: 1; background: black; border-radius: 8px;"></span><span
-                                class="bm-burger-bars"
-                                style="position: absolute; height: 20%; left: 0px; right: 0px; top: 80%; opacity: 1; background: black; border-radius: 8px;"></span></span>
-                    </div>
-                </div>
-                <div id="" class="bm-menu-wrap" aria-hidden="true" hidden="true"
-                    style="position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-300px, 0px, 0px); transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;">
-                    <div class="bm-menu bgMenu"
-                        style="height: 100%; box-sizing: border-box; overflow: auto; background: white; padding: 2.5em 1.5em 0px; font-size: 1.15em;">
-                        <nav class="bm-item-list bgList"
-                            style="height: 100%; display: flex; flex-direction: column; color: rgb(184, 183, 173); padding: 0.8em;">
-                            <a class="bm-item bgItem nav-link active text-white link" aria-current="page" tabindex="-1"
-                                href="/"
-                                style="display: inline-block; transform: translate3d(0px, 500px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">Home</a><a
-                                class="bm-item bgItem nav-link active text-white link" aria-current="page" tabindex="-1"
-                                href="/courses"
-                                style="display: inline-block; transform: translate3d(0px, 1000px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">Courses</a><a
-                                class="bm-item bgItem nav-link active text-white link" aria-current="page" tabindex="-1"
-                                href="/internship-categories"
-                                style="display: inline-block; transform: translate3d(0px, 1500px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">Internships</a><a
-                                class="bm-item bgItem nav-link active text-white link" aria-current="page" tabindex="-1"
-                                href="/about-us"
-                                style="display: inline-block; transform: translate3d(0px, 2000px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">About
-                                Us</a><a class="bm-item bgItem nav-link active text-white link" aria-current="page"
-                                tabindex="-1" href="/contact"
-                                style="display: inline-block; transform: translate3d(0px, 2500px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">Contact</a><a
-                                class="bm-item bgItem nav-link active text-white link" aria-current="page" tabindex="-1"
-                                href="/podcast"
-                                style="display: inline-block; transform: translate3d(0px, 3000px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">Unfiltered
-                                Story</a><a class="bm-item bgItem nav-link active text-white link" aria-current="page"
-                                tabindex="-1" href="/about-founder"
-                                style="display: inline-block; transform: translate3d(0px, 3500px, 0px); transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.2s; margin-top: 10px; font-weight: 500; width: 100%; padding: 1rem 1.7rem; border-radius: 12px; background: white; color: rgb(67, 177, 255);">About
-                                Founder</a></nav>
-                    </div>
-                    <div>
-                        <div class="bm-cross-button"
-                            style="position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;"><button
-                                type="button" id="react-burger-cross-btn" tabindex="-1"
-                                style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; font-size: 0px; background: transparent; cursor: pointer;">Close
-                                Menu</button><span style="position: absolute; top: 6px; right: 14px;"><span
-                                    class="bm-cross"
-                                    style="position: absolute; width: 3px; height: 14px; transform: rotate(45deg); background: rgb(68, 68, 68); margin-top: 10px; margin-right: 30px; font-weight: 600;"></span><span
-                                    class="bm-cross"
-                                    style="position: absolute; width: 3px; height: 14px; transform: rotate(-45deg); background: rgb(68, 68, 68); margin-top: 10px; margin-right: 30px; font-weight: 600;"></span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="d-none" style="margin-bottom: 0px;"><i class="bi bi-gift-fill"></i> End of Season Sale - Atleast
-                80% off on all courses [Limited Seats Only]</p>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid"><img src="/static/media/yuciLogo.3f3f703ae71919f35abe.png"
-                        class="logo me-16">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white"><button class="call-btn ms-2"><a
-                                    href="tel:8851972135" class="call-anchor">Join Us</a></button></ul>
-                    </div>
-                </div>
-            </nav>
+            <
+                
+               
+                
+            
             <div class="container-fluid">
                 <div class="relative">
                     <div class="row p-5 text-white course-detail-main-row">

@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="aboutus.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="yucilanding.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="height=device-height, 
+                  width=device-width, initial-scale=1.0, 
+                  minimum-scale=1.0, maximum-scale=1.0, 
+                  user-scalable=no, target-densitydpi=device-dpi">
+    <script src="stylin.js"></script>
+
+    <link rel="stylesheet" href="yucilanding.css">
+    <link rel="stylesheet" href="yucimobile.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Serif Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+
+<body>
+    <span class="icontext1">
+        <img src="static/iconn.jpg" class="icon">
+        <span class="icontext"><b>YUCI</b></span>
+
+    </span>
+
+    <span class="nav">
+        <button onmouseenter="changecolor('navbt1')" onmouseleave="changecolor2('navbt1')" id='navbt1'
+            onclick="window.location.href='aboutus.html'" class="navbtn">About Us</button>
+        <button onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2' class="navbtn"
+            onclick="window.location.href='index.html#om'">Our Mentors</button>
+        <button onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3' class="navbtn"
+            style="margin-right:0px;" onclick="window.location.href='index.html#pc'">Courses</button>
+        <button class="navbtn" style="margin:-10px 0px 0px -4px;">&#8964;</button>
+
+
+    </span>
+    <!--SIDE NAV FOR MOBILE VIEW-->
+    <div class="hamburger">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
+            <a href="#om2" class="topics">Mentors</a>
+            <a href="#pc" class="topics" id="coursekoi">Courses</a>
+            <a href="doctorxconnect.html" class="topics">doctorxconnect</a>
+            <a onclick="signOut()" class="topics" id="signoutmobile">Signout</a>
+        </div>
+
+
+
+        <span class="bar" onclick="openNav()">&#9776;</span>
+
+
+
+
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "55%";
+
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
+
+    <!--ENDS HERE-->
+   
+
+
+    <span class="sign-up">
+        <button class="signup" id="signup2">Sign Up &#8594;</button>
+        <div class="mycontainer">
+            <img src="/Users/lakshay/Desktop/yuci complete/static/abp1.jpeg" alt="" width="100%">
+        </div>
+        <div class="mycontainer">
+            <img src="/Users/lakshay/Desktop/yuci complete/static/abp2.jpeg" alt="" width="100%">
+        </div>
+        <div class="mycontainer">
+            <img src="/Users/lakshay/Desktop/yuci complete/static/abp3.jpeg" alt="" width="100%">
+        </div>
+        <div class="mycontainer">
+            <img src="/Users/lakshay/Desktop/yuci complete/static/abp4.jpeg" alt="" width="100%">
+        </div>
+        <script src="myuser.js"></script>
+        <script src="" async="" defer=""></script>
+
+</body>
+
+</html>

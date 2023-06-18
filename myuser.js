@@ -1,3 +1,4 @@
+
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyDTJhxhBm-aVpUHvQYQ-T7U3LkV0DQsXpg",
   authDomain: "one-wall-a3320.firebaseapp.com",
@@ -12,7 +13,7 @@ const firebaseApp = firebase.initializeApp({
 
 var storedData = localStorage.getItem("userData");
 var userData = JSON.parse(storedData);
-
+const mediaQuery = window.matchMedia('(max-width: 768px)');
 function authPage(text, fun) {
   var authBtn = document.getElementById("signup2");
   authBtn.innerHTML=text;
@@ -21,6 +22,7 @@ function authPage(text, fun) {
 }
 
 function signOut() {
+  console.log('chalgayo')
   firebaseApp
     .auth()
     .signOut()
@@ -52,7 +54,25 @@ if (storedData != null) {
       if (user) {
         // Perform actions with the current user
         console.log("Current user:", user.uid);
+        
+        if(mediaQuery.matches){
+          console.log(9);
+          // Get the element(s) by class name
+       const elements = document.getElementsByClassName('xplore2');
+       
+       // Convert the HTMLCollection to an array
+       const elementsArray = Array.from(elements);
+       
+       // Remove each element
+       elementsArray.forEach(element => {
+         element.parentNode.removeChild(element);
+       });
+
+      //document.getElementById('coursekoi').addEventListener("click",signOut())      
+     }
+      else{
         authPage("SignOut", "signOut()");
+      }
         
       }
     })
@@ -63,5 +83,8 @@ if (storedData != null) {
   
 } else {
   
+
+  
   authPage("Login", "window.location.assign('signup.html')");
 }
+

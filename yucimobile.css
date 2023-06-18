@@ -9,6 +9,8 @@
         .building{visibility:hidden;
                 height:0;}
         .nav{visibility: hidden;}
+        .icon{top:5px;}
+        .icontext{top:8px;}
         .welcomemsg{visibility:hidden}
 
          html {

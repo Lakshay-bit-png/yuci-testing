@@ -13,13 +13,14 @@ body {width:100%;
     font-family : 'Ubuntu';
 }
 
+
 .icon{
     height:50px;
-    margin:20px 20px ;
+    margin:1px 20px ;
     float:left
 }
 .icontext{position:relative;
-        top:34px;
+        top:8px;
         left:-18px;
         font-size: 25px;
         color:black;
@@ -111,7 +112,7 @@ body {width:100%;
         padding:5px 45px 5px 45px; 
         background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
         color:whitesmoke;
-        font-size:1.4vw;
+        font-size:1.8vw;
        
     }
     .xplore2{z-index:1;

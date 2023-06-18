@@ -84,18 +84,20 @@
                     text-align: center;}
 
                     
-        .xplore{font-size:2.5vw;
+        .xplore{font-size:3.5vw;
                 position:relative;
         }
         .signup{visibility: hidden;}
         .buttons{display:flex;
+             
                 justify-content: center;}
         .xplore{margin:0px;
-                width:30vw;
+                width:35vw;
                 padding:5px 15px 5px 15px;
               }
         .xplore2{visibility:visible;
                 background-color:white;
+                font-size:3.8vw;
                 color:Purple}
 
         .imgmentor{display: flex;
@@ -108,7 +110,7 @@
             
    
                   height:140vw;
-                  width: 130vw; }
+                  width: 120vw; }
 
         /*---------------------section2---------*/
           .Whyus{position:relative;

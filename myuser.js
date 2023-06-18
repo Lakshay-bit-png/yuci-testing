@@ -57,6 +57,8 @@ if (storedData != null) {
         
         if(mediaQuery.matches){
           console.log(9);
+          document.getElementById('signoutmobile').style.visibility='visible';
+  
           // Get the element(s) by class name
        const elements = document.getElementsByClassName('xplore2');
        
@@ -67,11 +69,12 @@ if (storedData != null) {
        elementsArray.forEach(element => {
          element.parentNode.removeChild(element);
        });
-
+       
       //document.getElementById('coursekoi').addEventListener("click",signOut())      
      }
       else{
         authPage("SignOut", "signOut()");
+        console.log(98)
       }
         
       }
@@ -83,7 +86,7 @@ if (storedData != null) {
   
 } else {
   
-
+        document.getElementById('signoutmobile').style.visibility='hidden';
   
   authPage("Login", "window.location.assign('signup.html')");
 }

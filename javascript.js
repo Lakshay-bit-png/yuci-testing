@@ -247,7 +247,7 @@ var mentorjson= [
    }
 ]
 var mentorhover=document.getElementsByClassName('hover-effect');
-console.log(mentorhover);
+
 for (let i=0;i<41;i++){
    var img = mentorhover[i]['children'][1];
    
@@ -317,7 +317,7 @@ function showpopu(x){
     let desc=document.querySelector('.descrip')
     let naam=document.querySelector('.name-head')
     document.querySelector('.jobtitle').innerHTML=mentorjson[x-1].position;
-    console.log("static"+mentorjson[x-1].imageUrl)
+    
     desc.innerHTML=mentorjson[x-1].description;
     hu.src = "static"+mentorjson[x-1].imageUrl;
     naam.innerHTML=mentorjson[x-1].name;
@@ -333,6 +333,6 @@ for (let k=0;k<=42;k++){
     };
     
 }
-console.log(images);
+
 
 

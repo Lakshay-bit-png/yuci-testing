@@ -248,13 +248,16 @@ var mentorjson= [
 ]
 var mentorhover=document.getElementsByClassName('hover-effect');
 console.log(mentorhover);
-for (let i=0;i<40;i++){
+for (let i=0;i<41;i++){
    var img = mentorhover[i]['children'][1];
    
    img.setAttribute('id','hv'+(i+1)); 
    var apn=document.getElementById(i+1);
    apn.innerHTML= 
    "\n <div>"+mentorjson[i].name+"</div>"+mentorjson[i].position 
+}
+function chaluband(){
+    document.querySelector('.pop').style.display='none';   
 }
 
 function hover(img) {
@@ -268,13 +271,14 @@ function hover(img) {
    
    
  }
-for (var i=0;i<=40;i++){
+for (var i=0;i<=42;i++){
    var img = mentorhover[i]['children'][1];
-  
+
+
+   
    img.addEventListener("mouseenter",hover(img) );
    img.addEventListener("mouseleave",nonhover(img) );
    
-
     
 }
 
@@ -296,13 +300,39 @@ function vis(card) {
    
    
  }
-for (var j=0;j<40;j++){
+for (var j=0;j<=42;j++){
    
    const card=document.querySelector('.appearing-card')
    img.addEventListener("mouseenter",vis(card) );
    img.addEventListener("mouseleave",hid(card) );
+   
 
     
 }
+
+
+
+function showpopu(x){
+    let hu = document.getElementById("imgp")
+    let desc=document.querySelector('.descrip')
+    let naam=document.querySelector('.name-head')
+    document.querySelector('.jobtitle').innerHTML=mentorjson[x-1].position;
+    console.log("static"+mentorjson[x-1].imageUrl)
+    desc.innerHTML=mentorjson[x-1].description;
+    hu.src = "static"+mentorjson[x-1].imageUrl;
+    naam.innerHTML=mentorjson[x-1].name;
+    document.querySelector('.pop').style.display='flex';
+    
+    
+}
+for (let k=0;k<=42;k++){
+    var imageme = document.getElementById("hv"+(k+1));
+    
+    imageme.onclick=function() {
+        showpopu(k)
+    };
+    
+}
+console.log(images);
 
 

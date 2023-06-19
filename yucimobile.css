@@ -185,7 +185,8 @@
        
         .mentorimgsphone{display:flex;
                         justify-content: center;
-                        visibility:visible;}
+                        visibility:visible;
+                        z-index:3;}
         .mentorimgsphone .mentor-circles{height:20vw;width:20vw;
                                         border-radius:25%;}
   }

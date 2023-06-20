@@ -213,7 +213,7 @@ body {width:100%;
             bottom:30px;
 }      
         .a img{height:150px;position:absolute;right:6px;top:-30px;}
-        .a:hover{background:linear-gradient(to right,#cecdcd,#e5fca2,#fff673);
+        .a:hover{background:linear-gradient(to right,#fffafa,#ebe4ff,#fff9a5);
                 } .a:hover h3{color:black} .a:hover span{color:black}
         
 

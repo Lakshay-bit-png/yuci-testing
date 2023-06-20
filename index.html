@@ -30,11 +30,11 @@
         </span>
       
         <span class="nav"> 
-            <button  onmouseenter="changecolor('navbt1')"  onmouseleave="changecolor2('navbt1')" id='navbt1' onclick="window.location.href='aboutus.html'" class="navbtn">About Us</button> 
-            <button onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2' class="navbtn" onclick="document.getElementById('om').scrollIntoView();">Our Mentors</button>
-           <button onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3' class="navbtn" onclick="document.getElementById('pc').scrollIntoView();" style="margin-right:0px;">Courses</button> 
-           <button class="navbtn" style="margin:-10px 0px 0px -4px;">&#8964;</button>
-           <button onclick="doctor()" onmouseenter="changecolor('navbt4')" onmouseleave="changecolor2('navbt4')" id='navbt4' class="navbtn" style="margin-right:0px;">doctorxconnect</button> 
+            <div  onmouseenter="changecolor('navbt1')"  onmouseleave="changecolor2('navbt1')" id='navbt1' onclick="window.location.href='aboutus.html'" class="navbtn" style="transition:0.1s ease-out;">About Us</div> 
+            <div onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2' class="navbtn" onclick="document.getElementById('om').scrollIntoView();">Our Mentors</div>
+           <div onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3' class="navbtn" onclick="document.getElementById('pc').scrollIntoView();" style="margin-right:0px;">Courses</div> 
+          
+           <div onclick="doctor()" onmouseenter="changecolor('navbt4')" onmouseleave="changecolor2('navbt4')" id='navbt4' class="navbtn" style="margin-right:0px;">Doctorxconnect</div> 
            
         </span>
 <!--SIDE NAV FOR MOBILE VIEW-->
@@ -44,7 +44,7 @@
         <a  class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
         <a href="#om2"  class="topics">Mentors</a>
         <a href="#pc" class="topics" id="coursekoi">Courses</a>
-        <a href="doctorxconnect.html" class="topics">doctorxconnect</a>
+        <a href="doctorxconnect.html" class="topics">Doctorxconnect</a>
        <a onclick="signOut()" class="topics"  id="signoutmobile">Signout</a>
       </div>
       
@@ -125,27 +125,27 @@
                 <span>Get LinkedIn shareable certificate after successfully completion of course!</span>
             </div>
     
-            <div id="second" class="a">
+            <div id="first" class="a">
                 <h3>Live Classes</h3><img src="static/5.png">
-                <span>Live classes with Experts working as professional developers!</span>
+                <span>Live classes with experts who are leaders in their respective industries!</span>
             </div>
     
-            <div id="third" class="a">
+            <div id="first" class="a">
                 <h3>3+ Projects</h3><img src="static/4.png">
                 <span>We believe in practical knowledge, so how can we forget about projects!</span>
             </div>
     
-            <div id="fourth" class="a">
+            <div id="first" class="a">
                 <h3>Many Doubts Solving</h3><img src="static/1.png">
                 <span>Yet not but many students and experts try to solve on one students!</span>
             </div>
     
-            <div id="fifth" class="a">
+            <div id="first" class="a">
                 <h3>Life Time Access</h3><img src="static/3.png">
                 <span>Get lifetime access to recording that help you to have edge on revision!</span>
             </div>
     
-            <div id="sixth" class="a">
+            <div id="first" class="a">
                 <h3>Free Internship</h3><img src="static/2.png">
                 <span>Get guaranteed free internship after every course completion!</span>
             </div>
@@ -604,8 +604,8 @@
             
 
             <br><br><br><br>
-            <div class="pop">
-                <div class="popup">
+            <div class="pop" >
+                <div class="popup"  >
                     <div class="flexvw">
                         <img class="mentor-pop" id="imgp" src="static/mentors/12.jpg">
                         <div style="display:flex;flex-direction: column;">

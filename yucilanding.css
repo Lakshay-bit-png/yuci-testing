@@ -395,8 +395,11 @@ left:-20px;
             display:flex;
             }
 .social-logo{height:80px;
+    cursor:pointer;
     width:140px;
-    margin-right:-40px;}
+    margin-right:-40px;
+    }
+
 @media only screen and (min-width:514px){
     .mentorimgsphone{visibility:hidden;
                     height:0;}

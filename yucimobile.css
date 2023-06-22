@@ -96,7 +96,7 @@
                         font-weight:900;
                       top:-30vw;}
                     
-        .xplore{font-size:3.5vw;
+        .xplore{font-size:4vw;
                 position:relative;
                 height:40px;
                 
@@ -109,18 +109,19 @@
                 justify-content: center;}
         
         .xplore{margin:0px;
-                width:30vw;
-                height:30px;
-                
+                width:40vw;
+                height:40px;
+                padding-top:10px;
                 padding:5px 5px 5px 5px;
               }
         .xplore2{visibility:visible;
                 background-color:white;
-                border:0.01px solid rgb(93, 93, 93);
-                font-size:3.5vw;
-                height:30px;
+                border:0.5px solid rgb(93, 93, 93);
+                font-size:4vw;
+                height:40px;
+                padding-top:0px;
                 padding-right:0px;
-                width:25vw;
+                width:40vw;
                 color:rgb(0, 0, 0)}
 
         .imgmentor{display: flex;

@@ -24,12 +24,12 @@ body{background-image:url('static/bg_yuci.jpeg');}
 }
 .icon{
     height:50px;
-    margin:20px 20px ;
+    margin:20px 40px ;
     float:left
 }
 .icontext{position:relative;
         top:35px;
-        left:-18px;
+        left:-40px;
         font-size: 25px;
         color:black;
   
@@ -85,12 +85,12 @@ body{background-image:url('static/bg_yuci.jpeg');}
 
 .signup{position:absolute;
         font-size: 20px;
-        right:20px;
+        right:40px;
         float:right;
         border:none;
         top:40px;
         background-color: white;
-        border:2px solid purple;
+        border:1px solid purple;
         border-radius:20px;
         padding:5px 20px 5px 20px;
         transition:0.5s;}

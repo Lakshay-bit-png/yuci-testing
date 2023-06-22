@@ -8,19 +8,25 @@
 @media only screen and (max-width:515px){
         .building{visibility:hidden;
                 height:0;}
-        .nav{visibility: hidden;}
+        .im{visibility:none;height:0;}
+        .nav{visibility: hidden;height:0;}
         .down{height:60px;width:80px;}
         .icontext1
         {position:relative;
-                top:-25px;}
-        .welcomemsg{visibility:hidden}
+               
+                top:-55px;}
+        .icon{height:30px;position:relative;top:12px;margin-right:20px;z-index:2}
+        .icontext{top:40px;font-size:16px;z-index:2}
+        .welcomemsg{visibility:hidden;height:0;}
         
          html {scroll-behavior: smooth;
               position: fixed;
               height: 100%;
                 overflow: hidden;
-  }
-  
+  }    .down{position:relative;
+                top:-110px;}
+        .s1{height:115%;}
+
         body {
            
             margin: 0;
@@ -83,11 +89,12 @@
         .meet-1{text-shadow:1px 1px 25px rgb(84, 76, 76);}
         .meet2{text-shadow:2px 1.5px 14px #6d5f5f;    }
         
-        .bridging-gaps{margin-top:-25vw;
-                font-size:3.5vw;
-                margin-left:0px;margin-right:0px;
-                    text-align: center;}
-
+        .bridging-gaps{visibility:hidden;height:0;
+                    }
+                    .brimobile{position:relative;
+                        text-align: center;
+                        font-size:3vw;
+                      top:-30vw;}
                     
         .xplore{font-size:3.5vw;
                 position:relative;
@@ -96,28 +103,36 @@
         }
         .signup{visibility: hidden;}
         .buttons{display:flex;
-             
+                position:relative;
+                top:-100px;
+                
                 justify-content: center;}
         .xplore{margin:0px;
-                width:35vw;
-                padding:5px 15px 5px 15px;
+                width:25vw;
+                height:25px;
+                font-size:2.5vw;
+                padding:5px 5px 5px 5px;
               }
         .xplore2{visibility:visible;
                 background-color:white;
-                font-size:3.8vw;
+                font-size:3.0vw;
+                height:25px;
+                width:25vw;
                 color:Purple}
 
         .imgmentor{display: flex;
+        position:relative;
+        top:-150px;
           align-items: center;
           justify-content: center;}
         .mentorimg{position:relative;
         
-            top:-10vw;
+            top:10vw;
             
             
    
-                  height:140vw;
-                  width: 120vw; }
+                  height:80vw;
+                  width: 60vw; }
 
         /*---------------------section2---------*/
           .Whyus{position:relative;
@@ -146,7 +161,8 @@
 
     /*-----------------------section3------------*/
     .popular-courses{position:relative;
-                      
+        left:0;display:flex;
+                     place-content: center;
                     font-size:10vw;}
         .search-icon{position:relative;
                 font-size :4vw;

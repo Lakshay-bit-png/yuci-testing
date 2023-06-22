@@ -7,6 +7,7 @@ button{font-family: 'Ubuntu';}
 .hamburger{visibility:hidden; 
             height:0;}
 .sidenav{visibility:hidden}
+.bradd{visibility: hidden;height:0;}
 .bar{visibility:hidden}
 .brimobile{visibility:hidden;height:0;}}
 body {width:100%;

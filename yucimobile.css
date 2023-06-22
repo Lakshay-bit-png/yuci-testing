@@ -9,7 +9,7 @@
         .building{visibility:hidden;
                 height:0;}
         .nav{visibility: hidden;}
-      
+        .down{height:60px;width:80px;}
         .icontext1
         {position:relative;
                 top:-25px;}

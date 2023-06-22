@@ -145,7 +145,8 @@ body{background-image:url('static/bg_yuci.jpeg');}
         margin-left:145px;
         border:1px solid white;
         border-radius:50px;
-       
+        height:40px;
+        padding-bottom:2px;
         background: linear-gradient(to right,#5170ff, #ff66c4 );
         color:whitesmoke;
         font-size:1.4vw;

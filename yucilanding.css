@@ -103,13 +103,13 @@ body{background-image:url('static/bg_yuci.jpeg');}
             justify-content: center;
             font-size:1.2vw;
             font-weight: bolder;
-            border:2px solid black;
+            border:0.2px solid black;
             margin:auto auto auto auto;
             padding:10px 5px 10px 5px;
             border-radius:30px;
             transition:0.4s;
             z-index:1;}
-.welcomemsg:hover{background:rgb(192, 1, 116);color:white;border:none;
+.welcomemsg:hover{background:rgb(192, 1, 116);color:white;border:0.2px solid white;
                 padding-bottom:12px;}
 
 
@@ -145,7 +145,7 @@ body{background-image:url('static/bg_yuci.jpeg');}
         margin-left:145px;
         border:1px solid white;
         border-radius:50px;
-        height:40px;
+        height:50px;
         padding-bottom:2px;
         background: linear-gradient(to right,#5170ff, #ff66c4 );
         color:whitesmoke;

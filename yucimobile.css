@@ -117,9 +117,10 @@
               }
         .xplore2{visibility:visible;
                 background-color:white;
-                border:0.5px solid rgb(93, 93, 93);
+                border: 1.5px solid rgb(93, 93, 93);
                 font-size:3.5vw;
                 height:40px;
+                font-weight:bold;
                 padding-top:0px;
                 padding-right:0px;
                 width:35vw;

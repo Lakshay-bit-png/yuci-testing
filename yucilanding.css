@@ -3,24 +3,30 @@ html{font-family:'Ubuntu';
 button{font-family: 'Ubuntu';}
 
 @media screen and (min-width:515px){
-.building{visibility: hidden;height:0;}
+.building{visibility: hidden;height:0px;position:absolute;}
 .hamburger{visibility:hidden; 
             height:0;}
 .sidenav{visibility:hidden}
 .bar{visibility:hidden}}
 body {width:100%;
+    
+   margin:0;padding:0;
     overflow-x : hidden;
     font-family : 'Ubuntu';
 }
+@media only screen and (min-width:515px){
+body{background-image:url('static/bg_yuci.jpeg');}
+.s1{
+        background-color: rgb(255, 255, 255);border-bottom-right-radius: 10%;border-bottom-left-radius:10%;}
 
-
+}
 .icon{
     height:50px;
-    margin:1px 20px ;
+    margin:20px 20px ;
     float:left
 }
 .icontext{position:relative;
-        top:8px;
+        top:35px;
         left:-18px;
         font-size: 25px;
         color:black;

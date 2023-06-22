@@ -25,7 +25,7 @@
                 overflow: hidden;
   }    .down{position:relative;
                 top:-110px;}
-        .s1{height:115%;}
+        .s1{height:100%;border-bottom-left-radius:30px;border-bottom-right-radius:30px;}
 
         body {
            

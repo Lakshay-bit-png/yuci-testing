@@ -15,6 +15,7 @@
         {position:relative;
                
                 top:-55px;}
+                body{margin: 0;padding: 0;}
         .icon{height:30px;position:relative;top:12px;margin-right:20px;z-index:2}
         .icontext{top:40px;font-size:18px;z-index:2}
         .welcomemsg{visibility:hidden;height:0;}
@@ -25,10 +26,10 @@
                 overflow: hidden;
   }    .down{position:relative;
                 top:-110px;}
-        .s1{height:100%;border-bottom-left-radius:30px;border-bottom-right-radius:30px;}
+        .s1{border-bottom-left-radius:50px;border-bottom-right-radius:50px;background-color: white;}
 
         body {
-           
+           padding:0;
             margin: 0;
             width: 100vw; 
             height: 100%;

@@ -1,240 +1,457 @@
-@media only screen and (max-width:1211px) and (min-width:515px){
-        .full{visibility:hidden;
-                height:0;
-               }
-        .building{visibility:visible;}
-        
+html{font-family:'Ubuntu';
+    scroll-behavior:smooth;}
+button{font-family: 'Ubuntu';}
+
+@media screen and (min-width:515px){
+.building{visibility: hidden;height:0px;position:absolute;}
+.hamburger{visibility:hidden; 
+            height:0;}
+.sidenav{visibility:hidden}
+.bar{visibility:hidden}
+.brimobile{visibility:hidden;height:0;}}
+body {width:100%;
+    
+   margin:0;padding:0;
+    overflow-x : hidden;
+    font-family : 'Ubuntu';
 }
-@media only screen and (max-width:515px){
-        .building{visibility:hidden;
-                height:0;}
-        .im{visibility:none;height:0;}
-        .nav{visibility: hidden;height:0;}
-        .down{height:60px;width:80px;}
-        .icontext1
-        {position:relative;
-               
-                top:-55px;}
-        .icon{height:30px;position:relative;top:12px;margin-right:20px;z-index:2}
-        .icontext{top:40px;font-size:16px;z-index:2}
-        .welcomemsg{visibility:hidden;height:0;}
-        
-         html {scroll-behavior: smooth;
-              position: fixed;
-              height: 100%;
-                overflow: hidden;
-  }    .down{position:relative;
-                top:-110px;}
-        .s1{height:115%;}
+@media only screen and (min-width:515px){
+body{background-image:url('static/bg_yuci.jpeg');}
+.s1{
+        background-color: rgb(255, 255, 255);border-bottom-right-radius: 100px;border-bottom-left-radius:100px;}
 
-        body {
-           
-            margin: 0;
-            width: 100vw; 
-            height: 100%;
-            overflow-y: auto;
-            overflow-x: hidden;
-            -webkit-overflow-scrolling: touch;
-  }
-        
-        
-       
-        
-        
-        
-        .sidenav {
-                height: 100%;
-                width: 0;
-                position: absolute;
-         
-                z-index: 4;
-                top: 0;
-                right: 0;
-                background-color: #6a0a35;
-                overflow-x: hidden;
-                transition: 0.25s;
-                padding-top: 60px;
-        }
-        
-         .topics {
-                padding: 1vw 16vw 2vw 8vw;
-;               cursor:pointer;
-                margin-top:4vw;
-                text-decoration: none;
-                font-size: 25px;
-                color:#f1f1f1;
-                display: block;
-                transition: 0.1s;
-        }
-        
-       
-        
-     
-        .closebtn {position: absolute;top:6vw;right:10vw;font-size:8vw;color:white; }
-        .bar{position:absolute;
-            font-size:10vw;
-            cursor:pointer;
-            top: 20px;
-            right:10vw;
-        }
-        .meet-thementors{
-            position:relative;
-            top:-30vw;
-            
-            }
-        .meet{ margin-left:0px;
-                margin-right:0px;
-                text-align: center;
-                font-size:12vw;}
-        .meet-1{text-shadow:1px 1px 25px rgb(84, 76, 76);}
-        .meet2{text-shadow:2px 1.5px 14px #6d5f5f;    }
-        
-        .bridging-gaps{visibility:hidden;height:0;
-                    }
-                    .brimobile{position:relative;
-                        text-align: center;
-                        font-size:3vw;
-                      top:-30vw;}
-                    
-        .xplore{font-size:3.5vw;
-                position:relative;
-                height:40px;
-                
-        }
-        .signup{visibility: hidden;}
-        .buttons{display:flex;
-                position:relative;
-                top:-100px;
-                
-                justify-content: center;}
-        .xplore{margin:0px;
-                width:25vw;
-                height:25px;
-                font-size:2.5vw;
-                padding:5px 5px 5px 5px;
-              }
-        .xplore2{visibility:visible;
-                background-color:white;
-                font-size:3.0vw;
-                height:25px;
-                width:25vw;
-                color:Purple}
+}
+.icon{
+    height:50px;
+    margin:20px 20px ;
+    float:left
+}
+.icontext{position:relative;
+        top:35px;
+        left:-18px;
+        font-size: 25px;
+        color:black;
+  
+}
 
-        .imgmentor{display: flex;
+
+.nav{
         position:relative;
-        top:-150px;
-          align-items: center;
-          justify-content: center;}
-        .mentorimg{position:relative;
+        display:flex;  
+        justify-content: center;
+        top:8px;
+        left:-55px;
         
-            top:10vw;
-            
-            
-   
-                  height:80vw;
-                  width: 60vw; }
 
-        /*---------------------section2---------*/
-          .Whyus{position:relative;
-                  color: yellow;
-                  text-align: center;
-                  font-size:10vw}
+}
+.navbtn{font-size:22px;
+        border:none;
+        position:relative;
+        cursor:pointer;
+        background:white;
+        margin-left:15px;
+        margin-right:15px;
+        transition:0.3s;
+}
+@keyframes borderAnimation {
+    0% {
+      width: 0;
+      left: 0;
+    }
+    100% {
+      width: 75%;
+      left: 0;
+    }
+  }
+  
+  .navbtn:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom:-4px;
+    width: 0;
+    height: 3px;
+    border-radius:20px;
+    background:linear-gradient(to right, rgb(45, 107, 215),rgb(55, 50, 207),rgb(113, 57, 172),rgb(164, 26, 164));
+    animation: borderAnimation 0.3s linear forwards;
+  }
+
+
+.bar{
+    margin:0px 0px 0px 0px ;
+}
+
+.signup{position:absolute;
+        font-size: 20px;
+        right:20px;
+        float:right;
+        border:none;
+        top:40px;
+        background-color: white;
+        border:2px solid purple;
+        border-radius:20px;
+        padding:5px 20px 5px 20px;
+        transition:0.5s;}
+.signup:hover{background-color:purple;
+            color:white}
+
+.welcomemsg{position:relative;
+            width:16vw;
+            color:rgb(213, 36, 130);
+            display:flex;
+            justify-content: center;
+            font-size:1.2vw;
+            font-weight: bolder;
+            border:2px solid black;
+            margin:auto auto auto auto;
+            padding:10px 5px 10px 5px;
+            border-radius:30px;
+            transition:0.4s;
+            z-index:1;}
+.welcomemsg:hover{background:rgb(192, 1, 116);color:white;border:none;
+                padding-bottom:12px;}
+
+
+
+.meet{font-family:'League Spartan';
+        margin-left:6vw;
+        margin-top:-0.5vw;
+        font-weight:600;
+        font-size:8vw;}
+
+.meet-thementors{
+    margin-top:85px;
+}
+.meet-1{color:#5271FF;margin-left:110px;
+        text-shadow:1px 2px 10px rgb(111, 108, 108);
+    }
+
+.meet-2{color:white;
+        text-shadow:2px 1.5px 25px #232121;    
+       }
+
+.meet-3{color:rgb(0, 0, 0);
+   margin-left: 110px;
+    }
+.bridging-gaps{margin-left:25px;
+                font-size:1.2vw; 
+            }
+
+
+
+.xplore{font-family:'Ubuntu',sans-serif;
+        z-index:1;
+        margin-left:145px;
+        border:1px solid white;
+        border-radius:50px;
+        height:40px;
+        padding-bottom:2px;
+        background: linear-gradient(to right,#5170ff, #ff66c4 );
+        color:whitesmoke;
+        font-size:1.4vw;
+        font-weight:900;
        
-         .main{display:grid;
-    grid-template-columns:repeat(1,90vw);
-        grid-template-rows:100fr 100fr 100fr 100fr 100fr 100fr;    
+    }
+    .xplore2{z-index:1;
+        border:1px solid rgb(0, 0, 0);
+        border-radius:20px;
+
+        width:30vw;
+        margin:0px;
+        color:whitesmoke;
+        font-size:2.5vw;
+        visibility:hidden;}
+@media only screen and (min-width:515px){
+.mentorimg{position:absolute;
+            top:90px;
+            right:100px;
+            height:42vw;
+            z-index:0;
+}
+           
+}
+
+    
+
+
+
+
+
+/*------------------------------------------------------------ section 2 styling begins from here*/
+
+
+@media only screen and (min-width:515px){
+
+        .main{
+        display:grid;
+        grid-template-columns:repeat(3,400px);
+        grid-template-rows:100fr 100fr;    
 
         align-items: center;
         justify-content: center;
-                }
-    .a{background:linear-gradient(to right,#fffafa,#ebe4ff,#fff9a5);
-    } h3{color:black;}
-    .a span{color:black;
-          }
-    .a img{height:40vw;
-          position:absolute;
-          top:-10vw;
-        right: -6vw}
-    .text{text-align:center;
-          margin-left:0px;}
+}
+
+
+    .Whyus{margin-left:240px;font-size:70px;
+    
+    font-family: 'League Spartan';
+            font-size:70px;
+            text-shadow:4px 4px 6px rgb(121, 121, 8);
+            font-weight: 100;
+            color: yellow;
+            
+        }}
+.a span{color: white; display: inline;transition:0.2s;}
+        #first,#second,#third,#fourth,#fifth,#sixth {
+            display:flexbox;position:relative;
+            color: white;
+            border: 2px dashed gray;
+            height:120px;
+            border-radius: 25px;
+            padding: 8px 15px 20px 15px;
+            margin:20px 10px 20px 10px ;
+            
+        }
+
+        .text{
+            color: #8c52ff;margin-left:10vw;font-size:25px;
+        }
+        .a{background-color: black;
+            transition:0.5s;}
+        .a span{position:absolute;
+            bottom:30px;
+}      
+        .a img{height:150px;position:absolute;right:6px;top:-30px;}
+        .a:hover{background:linear-gradient(to right,#fffafa,#ebe4ff,#fff9a5);
+                } .a:hover h3{color:black} .a:hover span{color:black}
+        
+
+/*------------------------------------------------------------ section 3 styling begins from here*/
+
+.popular-courses{position:relative;
+                top:50px;
+                left:200px;
+                font-size:60px;
+                font-weight:bold;
+                text-shadow:2px 2px 6px gray;}
+@media only screen and (min-width:515px){
+.search-icon{position:relative;
+            float:right;
+            right:250px;
+            font-size :30px;
+            top:75px;
+            border:4px dotted gray;
+            border-radius:30px;
+            padding:3px 50px 3px 50px;
+            cursor:pointer;}
+}
+
+.course-cards{display:flex;
+                align-items: center;
+            justify-content: center;}
+.card:hover{box-shadow:4px 4px 20px rgb(77, 168, 233);
+    border:3px dashed gray;
+            
+    background:white;}
+
+
+.card{height:400px;
+    box-shadow:1px 1px 15px rgb(196, 194, 194);
+    transition:0.2s ease-in-out;
+     width:350px;
+     margin:30px;
+     background:linear-gradient(to bottom, #fffafa ,#f1f1f1,#cce8fa);
+      border:0px dotted gray;
+    border-radius:20px;
+   }
+
+.card img{height:200px;width:345px;
+         margin-top:5px;
+        border-radius: 20px;}
+.course-topic{position:relative;
+                font-family:'Nunito';
+                top:20px;
+                left:30px;
+                font-size:25px;}
+
+.course-desc{position:relative;
+            top:60px;
+            left:25px;
+            }
+.course-price{position:relative;
+            float:right;
+             right:10px;
+            top:50px;}
+
+.xplore-more{font-family:'Nunito';
+                position:relative;
+                padding:10px 15px 10px 15px;
+                border:4px solid white;
+                border-radius:40px;
+                background-color:blueviolet; 
+                font-size:1.3vw;
+                color:white;
+                transition:1s;
+                
+            }
+/*-----------------------------------------------Section 4 styling-------*/
+.footer{background:linear-gradient(to bottom,black,rgb(68, 68, 68));
+    width: 100%;
+    }
+.Heading{color:white;
+    display:flex;
+  
+
+    justify-content: center;
+        margin-top:0px;
+        font-family: "League Spartan";
+        font-size:80px;}
+.tagline{display:flex;
+  
+        color:white;
+
+    justify-content: center;}
+    .hover-effect{display:flex;
+        place-content: center;
+        }
+.appearing-card{
+position:absolute;
+            z-index:4;
+            display:none;
+            text-align: center;
+            font-weight:800;
+            font-size:12px;
+            z-index:2;
+            padding-bottom:25px;
+            color:gray;
+            width:170px; 
+            height:50px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            transition:1s ease-in-out;
+           }
+
+.hover-effect:hover .appearing-card{
+display:block;
+}
+
+
+.hover-hu {
+     opacity: 0.7;
+     transition:0.1s ease-in-out;
+     
+    }
+              
+.hover-hu:hover{
+            opacity: 1;
+            border:3px solid white;
+
+           
+        }
+.appearing-card div{padding-top:8px;
+font-size:18px;
+color:darkblue;
+text-align: center;}
+
+.mentorimgs{display:flex;
+        align-items: center;
+        justify-content: center;}
+.mentor-circles{position:relative;
+border-radius:50%;
+cursor:pointer;transition:0.2s;
+            height:100px;
+            z-index:2;
+            width:100px;
+            margin:10px;
+            top:48px;}
+.pop{display:none;
+
+justify-content: center;
+width:100%;
+height:100%;
+background-color:rgba(0, 0, 0, 0.588);
+position:fixed;
+z-index:10;
+top:0px;
+left:0px;
+animation-name:anime;
+animation-duration: 0.3s;
+
+}
+@keyframes anime{
+0% {opacity:0.3;}
+100% {opacity:1}
+}
+.flexvw{display:flex;}
+.cross{position:relative;
+    top:82px;
+    right:22px;
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border:0.5px solid black;
+    font-size:30px;
+    color:rgb(0, 0, 0);
+
+}
+.popup{position:relative;
+    height:460px;
+    align-items: center;
+    width:400px;
+    top:100px;
+    
+ 
     
 
-    /*-----------------------section3------------*/
-    .popular-courses{position:relative;
-        left:0;display:flex;
-                     place-content: center;
-                    font-size:10vw;}
-        .search-icon{position:relative;
-                font-size :4vw;
-                display:flex;
-                justify-content: center;
-                top:75px;
-                margin-left:20vw;
-                margin-right:20vw;
-                border-radius:30px;
-                border:2px dotted gray;
-                }
-        .course-cards{display:grid;
-                
-                
-                justify-content: center;
-                
-                
-                       }
-        
-        .card img{width:100%;
+    
+  
+ 
+    border-radius:30px;
+    background-color: white;}
+.descrip{padding-right:22px;
+padding-left:20px;
+height:auto;
+text-align: justify;
+    font-size:20px;}
+.name-head{position:relative;
+right:25px;
+font-size:24px;
+top:20px;}
+.jobtitle{position:relative;
+color:#5a5a5a;
+left:-20px;
         }
-        
-        .card{width:90%;
-                height:350px;
-                
-                margin-left:auto;
-                margin-right:auto;
-                display:block;
-                align-items: center;
-                justify-content: center;}
-        .course-desc{position: relative;
-                        left:4vw;
-                        top: 10vw;}
-        
-        .xplore-more{font-size:5vw;
-                        width:60%}
-        .mentorimgs{visibility:hidden;
-                height:0;}
-        .social-media{visibility:hidden;}
-        @media only screen and (max-width:515px){
-       .pop{display:none;
-        place-content: center;
-        text-align: center;
-        }
-        .popup{width:300px;
-                height:420px;
-                margin-left:11vw;}
-        .mentor-pop{border-radius:30%;
-                position:relative;
-                width:150px;
-                height:150px;
-                left:0px;
-                right:0px;
-                
-                }
-        .flexvw{flex-direction: column;}
-        .name-head{position:relative;
-                top:-50px;
-                left:0px;
-                }
-        .jobtitle{left:auto;
-                top:-80px;}
-        .descrip{margin-top:-80px;
-                font-size:15px;}
-        }
-        .mentorimgsphone{display:flex;
-                        justify-content: center;
-                        visibility:visible;
-                        z-index:3;
-                        
-                        
-                        }
-        .mentorimgsphone .mentor-circles{height:20vw;width:20vw;
-                                        border-radius:25%;}
-  }
+.mentor-pop{height:180px;  
+        position:relative;
+        top:-50px;
+        left:-50px; 
+        border:6px solid white;
+        width:180px;   
+        border-radius:50%;}
+.icon2{height:50px;width:50px;
+        float:left;
+        margin-left:30px;}
+.icontext2{position:relative;
+    top:-24px;
+    left:-2px;
+    font-size: 25px;
+    color:rgb(255, 255, 255);}
+
+.social-media{float:right;
+            position:relative;
+            right:80px;
+            bottom:70px;
+            display:flex;
+            }
+.social-logo{height:80px;
+    cursor:pointer;
+    width:140px;
+    margin-right:-40px;
+    }
+
+@media only screen and (min-width:514px){
+    .mentorimgsphone{visibility:hidden;
+                    height:0;}
+
+}

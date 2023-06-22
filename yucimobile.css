@@ -9,10 +9,12 @@
         .building{visibility:hidden;
                 height:0;}
         .nav{visibility: hidden;}
-        .icon{top:5px;}
-        .icontext{top:8px;}
+      
+        .icontext1
+        {position:relative;
+                top:-25px;}
         .welcomemsg{visibility:hidden}
-
+        
          html {scroll-behavior: smooth;
               position: fixed;
               height: 100%;
@@ -50,7 +52,7 @@
         
          .topics {
                 padding: 1vw 16vw 2vw 8vw;
-;
+;               cursor:pointer;
                 margin-top:4vw;
                 text-decoration: none;
                 font-size: 25px;
@@ -66,7 +68,7 @@
         .bar{position:absolute;
             font-size:10vw;
             cursor:pointer;
-            top: 6vw;
+            top: 20px;
             right:10vw;
         }
         .meet-thementors{
@@ -166,6 +168,7 @@
         
         .card img{width:100%;
         }
+        
         .card{width:90%;
                 height:350px;
                 
@@ -189,7 +192,7 @@
         text-align: center;
         }
         .popup{width:300px;
-                height:440px;
+                height:420px;
                 margin-left:11vw;}
         .mentor-pop{border-radius:30%;
                 position:relative;

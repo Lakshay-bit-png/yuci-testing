@@ -29,61 +29,84 @@
 </head>
 
 <body>
-    <span class="icontext1">
-        <img src="static/iconn.jpg" class="icon">
-        <span class="icontext"><b>YUCI</b></span>
+   <div class="s1" >
+            <span class="icontext1">
+                <img src="static/iconn.jpg" class="icon">
+                <span class="icontext"><b>YUCI</b></span>
 
-    </span>
+            </span>
 
-    <span class="nav">
-        <button onmouseenter="changecolor('navbt1')" onmouseleave="changecolor2('navbt1')" id='navbt1'
-             class="navbtn">About Us</button>
-        <button onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2' class="navbtn"
-            onclick="window.location.href='index.html#om'">Our Mentors</button>
-        <button onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3' class="navbtn"
-            style="margin-right:0px;" onclick="window.location.href='index.html#pc'">Courses</button>
-        <button class="navbtn" style="margin:-10px 0px 0px -4px;">&#8964;</button>
+            <span class="nav">
+                <div onmouseenter="changecolor('navbt1')" onmouseleave="changecolor2('navbt1')" id='navbt1'
+                    onclick="window.location.href='aboutus.html'" class="navbtn" style="transition:0.1s ease-out;">About
+                    Us</div>
+                <div onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2'
+                    class="navbtn" onclick="document.getElementById('om').scrollIntoView();">Our Mentors</div>
+                <div onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3'
+                    class="navbtn" onclick="document.getElementById('pc').scrollIntoView();" style="margin-right:0px;">
+                    Courses</div>
 
+                <div onclick="doctor()" onmouseenter="changecolor('navbt4')" onmouseleave="changecolor2('navbt4')"
+                    id='navbt4' class="navbtn" style="margin-right:0px;">Doctorxconnect</div>
 
-    </span>
-    <!--SIDE NAV FOR MOBILE VIEW-->
-    <div class="hamburger">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
-            <a href="#om2" class="topics" onclick="window.location.href='index.html#om'">Mentors</a>
-            <a href="#pc" class="topics" id="coursekoi" onclick="window.location.href='index.html#pc'">Courses</a>
-            <a href="doctorxconnect.html" class="topics">doctorxconnect</a>
-            <a onclick="signOut()" class="topics" id="signoutmobile">Signout</a>
-        </div>
-
-
-
-        <span class="bar" onclick="openNav()">&#9776;</span>
-
-
+            </span>
+            <!--SIDE NAV FOR MOBILE VIEW-->
+            <div class="hamburger">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
+                    <a href="#om2" class="topics">Mentors</a>
+                    <a href="#pc" class="topics" id="coursekoi">Courses</a>
+                    <a href="doctorxconnect.html" class="topics">Doctorxconnect</a>
+                    <a onclick="signOut()" class="topics" id="signoutmobile">Signout</a>
+                </div>
 
 
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "55%";
+
+                <span class="bar" onclick="openNav()"><svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="hamburgerIconTitle" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#000"><path d="M6 7h12M6 12h12M6 17h12"/></svg></span>
 
 
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-
-        }
-    </script>
-
-    <!--ENDS HERE-->
-   
 
 
-    <span class="sign-up">
-        <button class="signup" id="signup2">Sign Up &#8594;</button>
+            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "55%";
+
+
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+
+                }
+            </script>
+
+            <!--ENDS HERE-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <span class="sign-up">
+                <button class="signup" id="signup2">Sign Up &#8594;</button> 
+
+            </span>
+            <br><br>
         <div class="mycontainer">
             <img src="static/abp1.jpeg" alt="" width="100%">
         </div>

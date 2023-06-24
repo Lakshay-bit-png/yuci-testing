@@ -1,133 +1,186 @@
-<html>
+<!DOCTYPE html>
+    <html lang="en">
+    <head> 
+      <meta name="description" content="Explore a wide range of courses and expand your knowledge from free coding classes with codingwiz. Let's start your journey to learn trending technologies."><meta name="title" content="Searching for the free online coding classes in India. Visit Now!"><meta name="keywords" content="codingwiz, frontend development, coding, full stack development, backend development , app development , machine learning, data structure ,DSA , Java , Python , C++ , deep learning , code ,algorithm , data structure and algorithm , coding classes , online coding classes , free coding classes ,  free coding bootcamp">
+      <meta name="description" content="Skills learning ">
+      <meta name="keywords" content="yuci, acting, YUCI, Marketing, singing, startup, ">
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="viewport" content="height=device-height, 
+                        width=device-width, initial-scale=1.0, 
+                        minimum-scale=1.0, maximum-scale=1.0, 
+                        user-scalable=no, target-densitydpi=device-dpi">
+      <script src="stylin.js"></script>
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68YPKGR6R5"></script>
+      <link rel="stylesheet" href="yucilanding.css">
+      <link rel="stylesheet" href="yucimobile.css">
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Source Serif Pro' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap" rel="stylesheet">
+  
+  
+  
+      <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="viewport" content="height=device-height, 
+                        width=device-width, initial-scale=1.0, 
+                        minimum-scale=1.0, maximum-scale=1.0, 
+                        user-scalable=no">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="s1" >
+        <span class="icontext1">
+            <img src="static/iconn.jpg" class="icon">
+            <span class="icontext"><b>YUCI</b></span>
 
-<head>
-    <link rel="stylesheet" href="aboutus.css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="viewport" content="height=device-height, 
-                      width=device-width, initial-scale=1.0, 
-                      minimum-scale=1.0, maximum-scale=1.0, 
-                      user-scalable=no, target-densitydpi=device-dpi">
-    <script src="stylin.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68YPKGR6R5"></script>
-    <link rel="stylesheet" href="yucilanding.css">
-    <link rel="stylesheet" href="yucimobile.css">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Source Serif Pro' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap" rel="stylesheet">
+        </span>
 
+        <span class="nav">
+            <div onmouseenter="changecolor('navbt1')" onmouseleave="changecolor2('navbt1')" id='navbt1'
+                onclick="window.location.href='aboutus.html'" class="navbtn" style="transition:0.1s ease-out;">About
+                Us</div>
+            <div onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2'
+                class="navbtn" onclick="document.getElementById('om').scrollIntoView();">Our Mentors</div>
+            <div onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3'
+                class="navbtn" onclick="document.getElementById('pc').scrollIntoView();" style="margin-right:0px;">
+                Courses</div>
 
+            <div onclick="doctor()" onmouseenter="changecolor('navbt4')" onmouseleave="changecolor2('navbt4')"
+                id='navbt4' class="navbtn" style="margin-right:0px;">Doctorxconnect</div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
-
-</head>
-
-<body>
-   <div class="s1" >
-            <span class="icontext1">
-                <img src="static/iconn.jpg" class="icon">
-                <span class="icontext"><b>YUCI</b></span>
-
-            </span>
-
-            <span class="nav">
-                <div onmouseenter="changecolor('navbt1')" onmouseleave="changecolor2('navbt1')" id='navbt1'
-                    onclick="window.location.href='aboutus.html'" class="navbtn" style="transition:0.1s ease-out;">About
-                    Us</div>
-                <div onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2'
-                    class="navbtn" onclick="document.getElementById('om').scrollIntoView();">Our Mentors</div>
-                <div onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3'
-                    class="navbtn" onclick="document.getElementById('pc').scrollIntoView();" style="margin-right:0px;">
-                    Courses</div>
-
-                <div onclick="doctor()" onmouseenter="changecolor('navbt4')" onmouseleave="changecolor2('navbt4')"
-                    id='navbt4' class="navbtn" style="margin-right:0px;">Doctorxconnect</div>
-
-            </span>
-            <!--SIDE NAV FOR MOBILE VIEW-->
-            <div class="hamburger">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
-                    <a href="#om2" class="topics">Mentors</a>
-                    <a href="#pc" class="topics" id="coursekoi">Courses</a>
-                    <a href="doctorxconnect.html" class="topics">Doctorxconnect</a>
-                    <a onclick="signOut()" class="topics" id="signoutmobile">Signout</a>
-                </div>
-
-
-
-                <span class="bar" onclick="openNav()"><svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="hamburgerIconTitle" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#000"><path d="M6 7h12M6 12h12M6 17h12"/></svg></span>
-
-
-
-
+        </span>
+        <!--SIDE NAV FOR MOBILE VIEW-->
+        <div class="hamburger">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
+                <a href="#om2" class="topics">Mentors</a>
+                <a href="#pc" class="topics" id="coursekoi">Courses</a>
+                <a href="doctorxconnect.html" class="topics">Doctorxconnect</a>
+                <a onclick="signOut()" class="topics" id="signoutmobile">Signout</a>
             </div>
-            <script>
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "55%";
 
 
-                }
 
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-
-                }
-            </script>
-
-            <!--ENDS HERE-->
+            <span class="bar" onclick="openNav()"><svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="hamburgerIconTitle" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#000"><path d="M6 7h12M6 12h12M6 17h12"/></svg></span>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <span class="sign-up">
-                <button class="signup" id="signup2">Sign Up &#8594;</button> 
-
-            </span>
-            <br><br>
-        <div class="mycontainer">
-            <img src="static/abp1.jpeg" alt="" width="100%">
         </div>
-        <div class="mycontainer">
-            <img src="static/abp2.jpeg" alt="" width="100%">
-        </div>
-        <div class="mycontainer">
-            <img src="static/abp3.jpeg" alt="" width="100%">
-        </div>
-        <div class="mycontainer">
-            <img src="static/abp4.jpeg" alt="" width="100%">
-        </div>
-        <script src="myuser.js"></script>
-        <script src="" async="" defer=""></script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "55%";
 
-</body>
 
-</html>
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+
+            }
+        </script>
+
+        <!--ENDS HERE-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <span class="sign-up">
+            <button class="signup" id="signup2">Sign Up &#8594;</button> 
+
+        </span>
+<!--ENDS HERE-->
+
+
+
+<span class="sign-up">
+    <button class="signup" id="signup2">Sign Up &#8594;</button>
+      <div class="mycontainer">
+        <img src="/Users/lakshay/Desktop/yuci complete/static/abp1.jpeg" alt="" width="100%">
+    </div>
+    <div class="mycontainer">
+        <img src="/Users/lakshay/Desktop/yuci complete/static/abp2.jpeg" alt="" width="100%">
+    </div>
+    <div class="mycontainer" >
+      <img src="/Users/lakshay/Desktop/ionic-swoosh-cards/dist/p3abp.jpeg" alt="" width="100%">
+  </div>
+   <div class="a">
+    <div class="mycontainer" >
+        <img src="/Users/lakshay/Desktop/ionic-swoosh-cards/dist/rajat.jpeg" alt="" class="founder" >
+    </div>
+ 
+        <div class="slider">
+            <div class="item">
+                <h1>His Story</h1>
+                Hailing from a humble background, Rajat Shrivastava was born  in a small village in the Indian state of Bihar. It was clear that Rajat had a special spark and a rebellious attitude from a young age. Rajat was lured to varied, frequently naughty activities while his siblings worked dutifully on their schoolwork.
+
+Rajat's parents sent him to live with his uncle in Bokaro  in an effort to give him a setting that would be good for learning. They hoped that a change of surroundings would enable him to focus on his academics and advance along with the other kids, however life didn't go accordingly.
+            </div>
+            <div class="item">
+                <h1>ACADEMICS</h1>
+                Rajat failed to meet his siblings' academic standards while being surrounded by academic expectations. Even if they received 90%, Rajat frequently complained about school when he got home. But nobody noticed how Rajat's experiences were moulding him as a person and leading him down a singular path.
+
+                Rajat's career as a young leader began at the age of 17, when he became actively involved in student politics by working with the Indian National Congress (INC) student union. His drive to have a bigger impact on society and his enthusiasm for social change were both sparked by this participation.
+                
+            </div>
+            <div class="item">
+                <h1>Turning Point</h1>
+                
+                A significant turning point in Rajat's life came as a result of his media profession. He advocated for change, brought attention to social concerns, and amplified the voices of the oppressed. Numerous media, such as Forbes, the New York Times, and ANI, recognised him for his tenacious pursuit of the truth and dedication to helping the public.
+                Rajat not only excelled in the media but also significantly impacted social change and education. He was named Director of Delhi Today, a significant Indian media outlet, in appreciation for his contributions.
+            </div>
+            <div class="item">
+                <h2>Establishment Of YUCI</h2>
+                In recognition of his accomplishments and influence in the industry, the National Crime Investigation Agency bestowed upon him the title of National Media Head. But Rajat's aspirations didn't end there. He established YUCI, India's first platform to offer direct mentoring from global professionals in every industry, out of a strong desire to empower Indian young. In March 2022, Shri Dharmendra Pradhan, the Honourable Education Minister of India, sent YUCI a letter of congratulations for its swift rise to fame and popularity.
+            </div>
+            <div class="item">
+                <h1>Idea Behind..</h1>
+                Rajat's idea for YUCI was inspired by his conviction that every kid in India, regardless of their circumstances or geography, ought to have access to the tools and guidance they need to realise their potential. He sought to empower the following generation of leaders and innovators in numerous sectors by bridging the resource gap through YUCI.
+            </div>
+            <div class="item">
+                <h1>Media Figure</h1>
+                Along with his professional successes, Rajat's life narrative has served as an inspiration to many. His transformation from a naughty kid in Bihar to a well-known social activist, businessman, and media figure provided as proof of the effectiveness of tenacity and grit. He came to represent hope for innumerable others who desired to improve their own lives and communities.
+            </div>
+            <div class="item">
+              <h1>Honours</h1>
+              APJ Abdul Kalam International Foundation's Kalam Ratna Award 2021, NDTV India's Young Entrepreneur of the Year Award, and the United Federation of Social Reformers' National Pride Award are just a few of the honours Rajat has garnered along the way. Additionally, the Coaching Federation's Corona Warrior Award was given to him for his selfless efforts in humanitarian service.
+            </div>
+          </div>
+          </div>
+          <div class="buttonn">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </button>
+      
+    
+        <script src="script.js"></script>
+    </body>
+    </html>

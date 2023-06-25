@@ -1,8 +1,6 @@
-
-
 body {
   overflow-x: hidden;
-  
+
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -47,7 +45,7 @@ body {
 }
 
 @media only screen and (max-width:1133px) and (min-width:754px) {
-  .container{display:none}
+
   .a {
     display: flex;
     flex-direction: column;
@@ -76,7 +74,7 @@ body {
 }
 
 @media only screen and (min-width:1133px) {
-  .container{display:none}
+
   .buttonn {
     display: flex;
     position: relative;
@@ -118,8 +116,28 @@ body {
 }
 
 @media only screen and (max-width:754px) {
-  .slider {
-    display: none
+  .item {
+    position: absolute;
+    width: 90%;
+    height:110%;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left:5%;
+    top: 0;
+    border: 4px dashed rgb(174, 174, 174);
+    font-size: 16px;
+  
+    background: linear-gradient(to right, #f6f0b57a, #fcb4f791);
+  
+  }
+  .buttonn {
+    position: relative;
+    display: flex;
+    place-content: center;
+    top: 100px;
   }
 
   .founder {
@@ -132,362 +150,335 @@ body {
     align-items: center;
   }
 
-  .buttonn {
-    display: none;
-  }
   
+
   @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-input[type=radio] {
-  display: none;
-}
-
-.card {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  height: 100%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-
-
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-  
-  img {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  * {
+    box-sizing: border-box;
   }
-}
 
-.player {
-  background-color: #fff;
-  border-radius: 8px;
-  min-width: 320px;
-  padding: 16px 10px;
-}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-.upper-part {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  height: 36px;
-  overflow: hidden;
-}
 
-.play-icon{ margin-right: 10px; }
 
-.song-info {
-  width: calc(100% - 32px);
-  display: block;
-}
+  input[type=radio] {
+    display: none;
+  }
 
-.song-info .title {
-  color: #403d40;
-  font-size: 14px;
-  line-height: 24px;
-}
+  .card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
 
-.sub-line {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
 
-.subtitle, .time {
-  font-size: 12px;
-  line-height: 16px;
-  color: #c6c5c6;
-}
 
-.time {
-  font-size: 12px;
-  line-height: 16px;
-  color: #a5a5a5;
-  font-weight: 500;
-  margin-left: auto;
-}
-
-.progress-bar {
-  height: 3px;
-  width: 100%;
-  background-color: #e9efff;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.progress {
-  display: block;
-  position: relative;
-  width: 60%;
-  height: 100%;
-  background-color: #2992dc;
-  border-radius: 6px;
-}
-
-.info-area {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  transition: transform .4s ease-in;
-}
-
-#item-2:checked ~ .player #test {
-  transform: translateY(0);
-}
-
-#item-2:checked ~ .player #test  {
-  transform: translateY(-40px);
-}
-
-#item-3:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
+  .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
 
 
 }
 
 
 
-@media only screen and (max-width:911px){
-  .building{visibility:hidden;
-          height:0;}
-  .im{visibility:none;height:0;}
-  .nav{visibility: hidden;height:0;}
-  .down{height:60px;width:80px;}
-  .icontext1
-  {position:relative;
-         
-          top:15px;}
-          body{margin: 0;padding: 0;}
-  .icon{height:30px;position:relative;top:12px;margin-right:20px;z-index:2;width:45px;}
-  .icontext{top:40px;font-size:18px;z-index:2}
-  .welcomemsg{visibility:hidden;height:0;}
-  .signup{visibility: hidden;}
-   html {scroll-behavior: smooth;
-        position: fixed;
-        height: 100%;
-          overflow: hidden;
-}    .down{position:relative;
-          top:-110px;}
+@media only screen and (max-width:911px) {
+  .building {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .im {
+    visibility: none;
+    height: 0;
+  }
+
+  .nav {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .down {
+    height: 60px;
+    width: 80px;
+  }
+
+  .icontext1 {
+    position: relative;
+
+    top: 15px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon {
+    height: 30px;
+    position: relative;
+    top: 12px;
+    margin-right: 20px;
+    z-index: 2;
+    width: 40px;
+  }
+
+  .icontext {
+    top: 40px;
+    font-size: 18px;
+    z-index: 2
+  }
+
+  .welcomemsg {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .signup {
+    visibility: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .down {
+    position: relative;
+    top: -110px;
+  }
 
 
   body {
-     padding:0;
-      margin: 0;
-      width: 100vw; 
-      height: 100%;
-      overflow-y: auto;
-      overflow-x: hidden;
-      -webkit-overflow-scrolling: touch;
-}
-  
-  
- 
-  
-  .down{height:35px;width:55px;}
-  
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+
+
+  .down {
+    height: 35px;
+    width: 55px;
+  }
+
   .sidenav {
-          height: 100%;
-          width: 0;
-          position: absolute;
-   
-          z-index: 4;
-          top: 0;
-          right: 0;
-          background-color: #6a0a35;
-          overflow-x: hidden;
-          transition: 0.25s;
-          padding-top: 60px;
-  }
-  
-   .topics {
-          padding: 1vw 16vw 2vw 8vw;
-;               cursor:pointer;
-          margin-top:4vw;
-          text-decoration: none;
-          font-size: 25px;
-          color:#f1f1f1;
-          display: block;
-          transition: 0.1s;
-  }
-  
- 
-  
+    height: 100%;
+    width: 0;
+    position: absolute;
 
-  .closebtn {position: absolute;top:6vw;right:10vw;font-size:8vw;color:white; }
-  .bar{position:absolute;
-      font-size:10vw;
-      cursor:pointer;
-      top: 28px;
-      right:10vw;
-  }}
+    z-index: 4;
+    top: 0;
+    right: 0;
+    background-color: #6a0a35;
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 60px;
+  }
+
+  .topics {
+    padding: 1vw 16vw 2vw 8vw;
+    ;
+    cursor: pointer;
+    margin-top: 4vw;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.1s;
+  }
 
 
-@media screen and (min-width:911px){
-  .building{visibility: hidden;height:0px;position:absolute;}
-  .hamburger{visibility:hidden; 
-              height:0;}
-  .sidenav{visibility:hidden}
-  .bradd{visibility: hidden;height:0;}
-  .bar{visibility:hidden}
-  .brimobile{visibility:hidden;height:0;}}
-  body {width:100%;
-      
-     margin:0;padding:0;
-      overflow-x : hidden;
-      font-family : 'Ubuntu';
-  }
-  @media only screen and (min-width:911px){
 
-  
-  
+
+  .closebtn {
+    position: absolute;
+    top: 6vw;
+    right: 10vw;
+    font-size: 8vw;
+    color: white;
   }
-  .icon{
-      height:50px;
-      margin:20px 40px ;
-      float:left
+
+  .bar {
+    position: absolute;
+    font-size: 10vw;
+    cursor: pointer;
+    top: 28px;
+    right: 10vw;
   }
-  .icontext{position:relative;
-          top:35px;
-          left:-40px;
-          font-size: 25px;
-          color:black;
-    
+}
+
+
+@media screen and (min-width:911px) {
+  .building {
+    visibility: hidden;
+    height: 0px;
+    position: absolute;
   }
-  
-  
-  .nav{
-          position:relative;
-          display:flex;  
-          justify-content: center;
-          top:8px;
-          left:-55px;
-          
-  
+
+  .hamburger {
+    visibility: hidden;
+    height: 0;
   }
-  .navbtn{font-size:22px;
-          border:none;
-          position:relative;
-          cursor:pointer;
-          background:white;
-          margin-left:15px;
-          margin-right:15px;
-          transition:0.3s;
+
+  .sidenav {
+    visibility: hidden
   }
-  @keyframes borderAnimation {
-      0% {
-        width: 0;
-        left: 0;
-      }
-      100% {
-        width: 75%;
-        left: 0;
-      }
-    }
-    
-    .navbtn:hover:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      bottom:-4px;
-      width: 0;
-      height: 3px;
-      border-radius:20px;
-      background:linear-gradient(to right, rgb(45, 107, 215),rgb(55, 50, 207),rgb(113, 57, 172),rgb(164, 26, 164));
-      animation: borderAnimation 0.3s linear forwards;
-    }
-  
-  
-  .bar{
-      margin:0px 0px 0px 0px ;
+
+  .bradd {
+    visibility: hidden;
+    height: 0;
   }
-  
-  .signup{position:absolute;
-          font-size: 20px;
-          right:40px;
-          float:right;
-          border:none;
-          top:40px;
-          background-color: white;
-          border:1px solid purple;
-          border-radius:20px;
-          padding:5px 20px 5px 20px;
-          transition:0.5s;}
-  .signup:hover{background-color:purple;
-              color:white}
-  
-  .welcomemsg{position:relative;
-              width:16vw;
-              color:rgb(213, 36, 130);
-              display:flex;
-              justify-content: center;
-              font-size:1.2vw;
-              font-weight: bolder;
-              border:0.2px solid black;
-              margin:auto auto auto auto;
-              padding:10px 5px 10px 5px;
-              border-radius:30px;
-              transition:0.4s;
-              z-index:1;}
-  .welcomemsg:hover{background:rgb(192, 1, 116);color:white;border:0.2px solid white;
-                  padding-bottom:12px;}
+
+  .bar {
+    visibility: hidden
+  }
+
+  .brimobile {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+body {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Ubuntu';
+}
+
+@media only screen and (min-width:911px) {}
+
+.icon {
+  height: 50px;
+  margin: 20px 40px;
+  float: left
+}
+
+.icontext {
+  position: relative;
+  top: 35px;
+  left: -40px;
+  font-size: 25px;
+  color: black;
+
+}
+
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 8px;
+  left: -55px;
+
+
+}
+
+.navbtn {
+  font-size: 22px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  background: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+@keyframes borderAnimation {
+  0% {
+    width: 0;
+    left: 0;
+  }
+
+  100% {
+    width: 75%;
+    left: 0;
+  }
+}
+
+.navbtn:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  border-radius: 20px;
+  background: linear-gradient(to right, rgb(45, 107, 215), rgb(55, 50, 207), rgb(113, 57, 172), rgb(164, 26, 164));
+  animation: borderAnimation 0.3s linear forwards;
+}
+
+
+.bar {
+  margin: 0px 0px 0px 0px;
+}
+
+.signup {
+  position: absolute;
+  font-size: 20px;
+  right: 40px;
+  float: right;
+  border: none;
+  top: 40px;
+  background-color: white;
+  border: 1px solid purple;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  transition: 0.5s;
+}
+
+.signup:hover {
+  background-color: purple;
+  color: white
+}
+
+.welcomemsg {
+  position: relative;
+  width: 16vw;
+  color: rgb(213, 36, 130);
+  display: flex;
+  justify-content: center;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  border: 0.2px solid black;
+  margin: auto auto auto auto;
+  padding: 10px 5px 10px 5px;
+  border-radius: 30px;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.welcomemsg:hover {
+  background: rgb(192, 1, 116);
+  color: white;
+  border: 0.2px solid white;
+  padding-bottom: 12px;
+}
+

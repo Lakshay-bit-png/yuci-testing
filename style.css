@@ -137,7 +137,7 @@ body {
     position: relative;
     display: flex;
     place-content: center;
-    top: 100px;
+    bottom: -200px;
   }
 
   .founder {

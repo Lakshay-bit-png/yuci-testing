@@ -8,7 +8,7 @@ body {
   font-family: monospace;
 }
 
-.founder {
+.founder {position:relative;
   z-index: 0;
   width: 80%;
   height: 100%;

@@ -1,7 +1,9 @@
 html{font-family:'Ubuntu';
     scroll-behavior:smooth;}
 button{font-family: 'Ubuntu';}
-
+@media only scree and (max-width:1210px){
+    .View-More{display:none;}
+}
 @media screen and (min-width:515px){
 .building{visibility: hidden;height:0px;position:absolute;}
 .hamburger{visibility:hidden; 

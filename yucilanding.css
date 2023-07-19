@@ -1,461 +1,686 @@
-html{font-family:'Ubuntu';
-    scroll-behavior:smooth;}
-button{font-family: 'Ubuntu';}
-@media only scree and (max-width:1210px){
-    .View-More{display:none;}
-}
-@media screen and (min-width:515px){
-.building{visibility: hidden;height:0px;position:absolute;}
-.hamburger{visibility:hidden; 
-            height:0;}
-.sidenav{visibility:hidden}
-.bradd{visibility: hidden;height:0;}
-.bar{visibility:hidden}
-.brimobile{visibility:hidden;height:0;}}
-body {width:100%;
-    
-   margin:0;padding:0;
-    overflow-x : hidden;
-    font-family : 'Ubuntu';
-}
-@media only screen and (min-width:515px){
-body{background-image:url('static/bg_yuci.jpeg');}
-.s1{
-        background-color: rgb(255, 255, 255);border-bottom-right-radius: 100px;border-bottom-left-radius:100px;}
+<html>
 
-}
-.icon{
-    height:50px;
-    margin:20px 40px ;
-    float:left
-}
-.icontext{position:relative;
-        top:35px;
-        left:-40px;
-        font-size: 25px;
-        color:black;
-  
-}
-
-
-.nav{
-        position:relative;
-        display:flex;  
-        justify-content: center;
-        top:8px;
-        left:-55px;
-        
-
-}
-.navbtn{font-size:22px;
-        border:none;
-        position:relative;
-        cursor:pointer;
-        background:white;
-        margin-left:15px;
-        margin-right:15px;
-        transition:0.3s;
-}
-@keyframes borderAnimation {
-    0% {
-      width: 0;
-      left: 0;
-    }
-    100% {
-      width: 75%;
-      left: 0;
-    }
-  }
-  
-  .navbtn:hover:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    bottom:-4px;
-    width: 0;
-    height: 3px;
-    border-radius:20px;
-    background:linear-gradient(to right, rgb(45, 107, 215),rgb(55, 50, 207),rgb(113, 57, 172),rgb(164, 26, 164));
-    animation: borderAnimation 0.3s linear forwards;
-  }
-
-
-.bar{
-    margin:0px 0px 0px 0px ;
-}
-
-.signup{position:absolute;
-        font-size: 20px;
-        right:40px;
-        float:right;
-        border:none;
-        top:40px;
-        background-color: white;
-        border:0.5px solid purple;
-        border-radius:20px;
-        padding:5px 20px 5px 20px;
-        transition:0.5s;}
-.signup:hover{background-color:purple;
-            color:white}
-
-.welcomemsg{position:relative;
-            width:16vw;
-            color:rgb(213, 36, 130);
-            display:flex;
-            justify-content: center;
-            font-size:1.2vw;
-            font-weight: bolder;
-            border:1px solid black;
-            margin:auto auto auto auto;
-            padding:10px 5px 10px 5px;
-            border-radius:30px;
-            transition:0.4s;
-            z-index:1;}
-.welcomemsg:hover{background:rgb(192, 1, 116);color:white;border:1px solid white;
-                padding-bottom:12px;}
+<head>
+    <meta name="description" content="Explore a wide range of courses and expand your knowledge from free coding classes with codingwiz. Let's start your journey to learn trending technologies."><meta name="title" content="Searching for the free online coding classes in India. Visit Now!"><meta name="keywords" content="codingwiz, frontend development, coding, full stack development, backend development , app development , machine learning, data structure ,DSA , Java , Python , C++ , deep learning , code ,algorithm , data structure and algorithm , coding classes , online coding classes , free coding classes ,  free coding bootcamp">
+    <meta name="description" content="Skills learning ">
+    <meta name="keywords" content="yuci, acting, YUCI, Marketing, singing, startup, ">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+    <script src="stylin.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68YPKGR6R5"></script>
+    <link rel="stylesheet" href="yucilanding.css">
+    <link rel="stylesheet" href="yucimobile.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Serif Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap" rel="stylesheet">
 
 
 
-.meet{font-family:'League Spartan';
-        margin-left:6vw;
-        margin-top:-0.5vw;
-        font-weight:600;
-        font-size:8vw;}
-
-.meet-thementors{
-    margin-top:85px;
-}
-.meet-1{color:#5271FF;margin-left:110px;
-        text-shadow:1px 2px 10px rgb(111, 108, 108);
-    }
-
-.meet-2{color:white;
-        text-shadow:2px 1.5px 25px #232121;    
-       }
-
-.meet-3{color:rgb(0, 0, 0);
-   margin-left: 110px;
-    }
-.bridging-gaps{margin-left:25px;
-                font-size:1.2vw; 
-            }
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
 
 
+</head>
 
-.xplore{font-family:'Ubuntu',sans-serif;
-        z-index:1;
-        margin-left:145px;
-        border:1px solid white;
-        border-radius:50px;
-        height:50px;
-        padding-left:25px;padding-right:25px;
-        padding-bottom:2px;
-        background: linear-gradient(to right,#5170ff, #ff66c4 );
-        color:whitesmoke;
-        font-size:1.4vw;
-        font-weight:900;
-       
-    }
-    .xplore2{z-index:1;
-        border:1px solid rgb(0, 0, 0);
-        border-radius:20px;
+<body><span class="building" style="color:white">Website is in it's building stage , you can either aceess the website on a latop by
+        increasing window width or use a mobile</span>
+    <div class="full">
+        <div class="s1" >
+            <span class="icontext1">
+                <img src="static/iconn.jpg" class="icon">
+                <span class="icontext"><b>YUCI</b></span>
 
-        width:30vw;
-        margin:0px;
-        color:whitesmoke;
-        font-size:2.5vw;
-        visibility:hidden;}
-@media only screen and (min-width:515px){
-.mentorimg{position:absolute;
-            top:90px;
-            right:100px;
-            height:42vw;
-            z-index:0;
-}
-           
-}
+            </span>
 
-    
+            <span class="nav">
+                <div onmouseenter="changecolor('navbt1')" onmouseleave="changecolor2('navbt1')" id='navbt1'
+                    onclick="window.location.href='aboutus.html'" class="navbtn" style="transition:0.1s ease-out;">About
+                    Us</div>
+                <div onmouseenter="changecolor('navbt2')" onmouseleave="changecolor2('navbt2')" id='navbt2'
+                    class="navbtn" onclick="document.getElementById('om').scrollIntoView();">Our Mentors</div>
+                <div onmouseenter="changecolor('navbt3')" onmouseleave="changecolor2('navbt3')" id='navbt3'
+                    class="navbtn" onclick="document.getElementById('pc').scrollIntoView();" style="margin-right:0px;">
+                    Courses</div>
+
+                <div onclick="doctor()" onmouseenter="changecolor('navbt4')" onmouseleave="changecolor2('navbt4')"
+                    id='navbt4' class="navbtn" style="margin-right:0px;">Doctorxconnect</div>
+
+            </span>
+            <!--SIDE NAV FOR MOBILE VIEW-->
+            <div class="hamburger">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="topics" onclick="window.location.href='aboutus.html'">About Us </a>
+                    <a href="#om2" class="topics">Mentors</a>
+                    <a href="#pc" class="topics" id="coursekoi">Courses</a>
+                    <a href="doctorxconnect.html" class="topics">Doctorxconnect</a>
+                    <a onclick="signOut()" class="topics" id="signoutmobile">Signout</a>
+                </div>
+
+
+
+                <span class="bar" onclick="openNav()"><svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="hamburgerIconTitle" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#000"><path d="M6 7h12M6 12h12M6 17h12"/></svg></span>
+
+
+
+
+            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "55%";
+
+
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+
+                }
+            </script>
+
+            <!--ENDS HERE-->
 
 
 
 
 
-/*------------------------------------------------------------ section 2 styling begins from here*/
 
 
-@media only screen and (min-width:515px){
-
-        .main{
-        display:grid;
-        grid-template-columns:repeat(3,400px);
-        grid-template-rows:100fr 100fr;    
-
-        align-items: center;
-        justify-content: center;
-}
 
 
-    .Whyus{margin-left:100px;font-size:70px;
-    
-    font-family: 'League Spartan';
-            font-size:70px;
-            text-shadow:4px 4px 6px rgb(121, 121, 8);
-            font-weight: 100;
-            color: yellow;
-            
-        }}
-.a span{color: white; display: inline;transition:0.2s;}
-        #first,#second,#third,#fourth,#fifth,#sixth {
-            display:flexbox;position:relative;
-            color: white;
-            border: 2px dashed gray;
-            height:120px;
-            border-radius: 25px;
-            padding: 8px 15px 20px 15px;
-            margin:20px 10px 20px 10px ;
-            
-        }
-
-        .text{
-            color: #8c52ff;margin-left:100px;font-size:25px;
-        }
-        .a{background-color: black;
-            transition:0.5s;}
-        .a span{position:absolute;
-            bottom:30px;
-}      
-        .a img{height:150px;position:absolute;right:6px;top:-30px;}
-        .a:hover{background:linear-gradient(to right,#fffafa,#ebe4ff,#fff9a5);
-                } .a:hover h3{color:black} .a:hover span{color:black}
-        
-
-/*------------------------------------------------------------ section 3 styling begins from here*/
-
-.popular-courses{position:relative;
-                top:50px;
-                left:100px;
-                font-size:60px;
-                font-weight:bold;
-                text-shadow:2px 2px 6px gray;}
-@media only screen and (min-width:515px){
-.search-icon{position:relative;
-            float:right;
-            right:250px;
-            font-size :30px;
-            top:75px;
-            border:4px dotted gray;
-            border-radius:30px;
-            padding:3px 50px 3px 50px;
-            cursor:pointer;}
-}
-
-.course-cards{display:flex;
-                align-items: center;
-            justify-content: center;}
-.card:hover{box-shadow:4px 4px 20px rgb(77, 168, 233);
-    border:3px dashed gray;
-            
-    background:white;}
 
 
-.card{height:400px;
-    box-shadow:1px 1px 15px rgb(196, 194, 194);
-    transition:0.2s ease-in-out;
-     width:350px;
-     margin:30px;
-     background:linear-gradient(to bottom, #fffafa ,#f1f1f1,#cce8fa);
-      border:0px dotted gray;
-    border-radius:20px;
-   }
-
-.card img{height:200px;width:345px;
-         margin-top:5px;
-        border-radius: 20px;}
-.course-topic{position:relative;
-                font-family:'Nunito';
-                top:20px;
-                left:30px;
-                font-size:25px;}
-
-.course-desc{position:relative;
-            top:60px;
-            left:25px;
-            }
-.course-price{position:relative;
-            float:right;
-             right:10px;
-            top:50px;}
-
-.xplore-more{font-family:'Nunito';
-                position:relative;
-                padding:10px 15px 10px 15px;
-                border:4px solid white;
-                border-radius:40px;
-                background-color:blueviolet; 
-                font-size:1.3vw;
-                color:white;
-                transition:1s;
-                
-            }
-/*-----------------------------------------------Section 4 styling-------*/
-.footer{background:linear-gradient(to bottom,black,rgb(68, 68, 68));
-    width: 100%;
-    }
-.Heading{color:white;
-    display:flex;
-  
-
-    justify-content: center;
-        margin-top:0px;
-        font-family: "League Spartan";
-        font-size:80px;}
-.tagline{display:flex;
-  
-        color:white;
-
-    justify-content: center;}
-    .hover-effect{display:flex;
-        place-content: center;
-        }
-.appearing-card{
-position:absolute;
-            z-index:4;
-            display:none;
-            text-align: center;
-            font-weight:800;
-            font-size:12px;
-            z-index:2;
-            padding-bottom:25px;
-            color:gray;
-            width:170px; 
-            height:50px;
-            background-color: whitesmoke;
-            border-radius: 10px;
-            transition:1s ease-in-out;
-           }
-
-.hover-effect:hover .appearing-card{
-display:block;
-}
 
 
-.hover-hu {
-     opacity: 0.7;
-     transition:0.1s ease-in-out;
-     
-    }
-              
-.hover-hu:hover{
-            opacity: 1;
-            border:3px solid white;
 
-           
-        }
-.appearing-card div{padding-top:8px;
-font-size:18px;
-color:darkblue;
-text-align: center;}
 
-.mentorimgs{display:flex;
-        align-items: center;
-        justify-content: center;}
-.mentor-circles{position:relative;
-border-radius:50%;
-cursor:pointer;transition:0.2s;
-            height:100px;
-            z-index:2;
-            width:100px;
-            margin:10px;
-            top:48px;}
-.pop{display:none;
 
-justify-content: center;
-width:100%;
-height:100%;
-background-color:rgba(0, 0, 0, 0.588);
-position:fixed;
-z-index:10;
-top:0px;
-left:0px;
-animation-name:anime;
-animation-duration: 0.3s;
 
-}
-@keyframes anime{
-0% {opacity:0.3;}
-100% {opacity:1}
-}
-.flexvw{display:flex;}
-.cross{position:relative;
-    top:82px;
-    right:22px;
-    height:40px;
-    width:40px;
-    border-radius:20px;
-    border:0.5px solid black;
-    font-size:30px;
-    color:rgb(0, 0, 0);
 
-}
-.popup{position:relative;
-    height:460px;
-    align-items: center;
-    width:400px;
-    top:100px;
-    
- 
-    
 
-    
-  
- 
-    border-radius:30px;
-    background-color: white;}
-.descrip{padding-right:22px;
-padding-left:20px;
-height:auto;
-text-align: justify;
-    font-size:20px;}
-.name-head{position:relative;
-right:25px;
-font-size:24px;
-top:20px;}
-.jobtitle{position:relative;
-color:#5a5a5a;
-left:-20px;
-        }
-.mentor-pop{height:180px;  
-        position:relative;
-        top:-50px;
-        left:-50px; 
-        border:6px solid white;
-        width:180px;   
-        border-radius:50%;}
-.icon2{height:50px;width:50px;
-        float:left;
-        margin-left:30px;}
-.icontext2{position:relative;
-    top:-24px;
-    left:-2px;
-    font-size: 25px;
-    color:rgb(255, 255, 255);}
+            <span class="sign-up">
+                <button class="signup" id="signup2">Sign Up &#8594;</button> 
 
-.social-media{float:right;
-            position:relative;
-            right:80px;
-            bottom:70px;
-            display:flex;
-            }
-.social-logo{height:80px;
-    cursor:pointer;
-    width:140px;
-    margin-right:-40px;
-    }
+            </span>
+            <br><br>
+            <div class="left-written-text">
+                <br><br>
+                <span class="welcomemsg">WELCOME TO YUCI </span>
+                <div class="bradd"><br><br></div>
+                <div class="meet-thementors">
+                    <div class="meet meet-1">Meet the</div>
+                    <div class="meet meet-2">Professional</div>
+                    <div class="meet meet-3">Mentors</div>
+                </div>
+            </div>
+                <span>
+                    <pre class="bridging-gaps">
+        Bridging all the Learning Gaps with
+        <span style="font-weight:bolder;">YUCI</span> Education..
+                    </pre>
+                </span>
+                <pre class="brimobile">"Bridging all the Learning Gaps with YUCI Edu.."</pre>
+                <div class="buttons"><button class="xplore "
+                        onclick="document.getElementById('pc').scrollIntoView();"><b>Explore Courses &nbsp;</b><img src="static/XP.png" class="im" style="position:relative;top:4px;"  height="22px;" width="22px;"></button>&nbsp;&nbsp;&nbsp;
+                    <button class="xplore2" onclick="window.location.href='signup.html'" id="signup2">Sign Up &nbsp;&nbsp;  &#x2794;</button>
+                </div>
 
-@media only screen and (min-width:514px){
-    .mentorimgsphone{visibility:hidden;
-                    height:0;}
+                <span class="imgmentor"> <img class="mentorimg" src="static/Untitled design.jpg"></span>
 
-}
+               <center><img class="down" src="static/down.png" height=70px width=120px; onclick="document.querySelector('.Whyus').scrollIntoView();" ></center>
+
+            </div>
+            <!----------------------------------------------------------------section 2 of webpage-->
+            <div style="background-image:url('static/bg_yuci.jpeg');margin-left:-10.5px;"><br><br>
+                <p class="Whyus"><b>Why Us?</b></p>
+                <div class=" main">
+
+                    <div id="first" class="a">
+                        <h3>Shareable Certificate</h3><img src="static/6.png">
+                        <span>Get LinkedIn shareable certificate after successfully completion of course!</span>
+                    </div>
+
+                    <div id="first" class="a">
+                        <h3>Live Classes</h3><img src="static/5.png">
+                        <span>Live classes with experts who are leaders in their respective industries!</span>
+                    </div>
+
+                    <div id="first" class="a">
+                        <h3>3+ Projects</h3><img src="static/4.png">
+                        <span>We believe in practical knowledge, so how can we forget about projects!</span>
+                    </div>
+
+                    <div id="first" class="a">
+                        <h3>Many Doubts Solving</h3><img src="static/1.png">
+                        <span>Yet not but many students and experts try to solve on one students!</span>
+                    </div>
+
+                    <div id="first" class="a">
+                        <h3>Life Time Access</h3><img src="static/3.png">
+                        <span>Get lifetime access to recording that help you to have edge on revision!</span>
+                    </div>
+
+                    <div id="first" class="a">
+                        <h3>Free Internship</h3><img src="static/2.png">
+                        <span>Get guaranteed free internship after every course completion!</span>
+                    </div>
+
+
+                </div><br>
+                <p class="text"> So, what's stopping you now ?</p><br><br>
+            </div>
+
+            <!----------------------------------------------------------------------------section 3 of webpage-->
+            <div style="background-color: white;width:100%;border-radius:50px;">
+                <span class="popular-courses" id="pc">
+                    Popular Courses
+                </span><br>
+                <!--<span class="search-icon" id="icon-search" onclick="document.getElementById('icon-search').style.color='blue'"> <i class="fa fa-search" ></i>&nbsp;&nbsp;&nbsp;Search Here</span> -->
+                <br><br><br><br><br><br><br>
+                <div class="course-cards">
+                    <div onclick="location.href='mycourses/yucicourse.html';" class="card">
+                        <img src="static/b1.png">
+
+                        <div class="course-topic">Idea of Startup</div>
+                        <div class="course-price">&#8377; 14999/-</div>
+
+                        <span class="course-desc">Starts from 1st May 2023<br>
+                            10:00-12:00AM every Sunday.</span>
+
+                    </div>
+                    <div onclick="location.href='mycourses/Journalism.html';" class="card">
+                        <img src="static/b2.png">
+
+                        <div class="course-topic">Digital Marketing</div>
+
+                        <div class="course-price">&#8377; 4999/-</div>
+
+                        <span class="course-desc">Starts from 1st May 2023<br>
+                            10:00-12:00AM every Sunday.</span>
+
+                    </div>
+                    <div onclick="location.href='mycourses/UPESC.html';" class="card">
+                        <img src="static/b3.png">
+
+                        <div class="course-topic">Civil Services</div>
+                        <div class="course-price">&#8377; 4999/-</div>
+
+                        <span class="course-desc">Starts from 1st May 2023<br>
+                            10:00-12:00AM every Sunday.</span>
+
+                    </div>
+                </div>
+                <div class="course-cards">
+                    <div onclick="location.href='mycourses/Singing.html';" class="card">
+                        <img src="static/b4.png">
+
+                        <div class="course-topic">Singing Skills</div>
+                        <div class="course-price">&#8377; 4999/-</div>
+
+                        <span class="course-desc">Starts from 1st May 2023<br>
+                            10:00-12:00AM every Sunday.</span>
+
+                    </div>
+                    <div onclick="location.href='mycourses/public.html';" class="card">
+                        <img src="static/b5.png">
+
+                        <div class="course-topic">Speaking Skills</div>
+
+                        <div class="course-price">&#8377; 4999/-</div>
+
+                        <span class="course-desc">Starts from 1st May 2023<br>
+                            10:00-12:00AM every Sunday.</span>
+
+
+                    </div>
+
+
+                </div><br><br><br>
+                <center><button class="xplore-more" id="xplor"
+                        onclick="document.getElementById('xplor').style.backgroundColor='purple'">Explore More
+                        &#x2794;</button>
+                </center><br>
+            </div>
+
+            <!----------------------------Section 4 begins from here-->
+            <div class="footer"><br><br>
+                <span class="Heading" id="om">
+                    <center>Our Mentors</center>
+                </span>
+                <br>
+                <span class="tagline"><i>
+                        <center>" TOP of the industry leaders and professionals.."</center>
+                    </i></span><br><br><br>
+                <div class="mentorimgs">
+                    <div class="hover-effect" style="height:0;visibility: hidden;">
+                        <div class="appearing-card" style="display:none">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/1.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="1">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/1.jpg" onclick="www.google.com">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="2">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/2.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="3">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/3.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="4">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/4.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="5">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/5.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="6">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/6.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="7">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/7.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="8">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/8.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="9">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/9.jpg">
+                    </div>
+                    <div class="hover-effect" style="visibility: hidden;">
+                        <div class="appearing-card" id="10">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/10.jpg">
+                    </div>
+
+                </div>
+                <div class="mentorimgs" >
+
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="11">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/11.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="12">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/12.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="13">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/13.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="14">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/14.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="15">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/15.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="16">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/16.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="17">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/17.jpg">
+                    </div>
+
+                </div>
+                <div class="mentorimgs" style="display:none;">
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="18">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/18.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="19">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/19.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="20">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/20.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="21">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/21.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="22">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/22.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="23">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/23.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="24">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/24.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="25">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/25.jpg">
+                    </div>
+
+                </div>
+                <div class="mentorimgs" style="display:none;">
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="26">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/26.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="27">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/27.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="28">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/28.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="29">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/29.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="30">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/30.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="31">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/31.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="32">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/32.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="33">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/33.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="34">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/34.jpg">
+                    </div>
+                </div>
+                <div class="mentorimgs"style="display:none;">
+
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="35">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/35.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="36">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/36.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="37">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/37.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="38">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/38.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="39">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/39.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="40">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/40.jpg">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card" id="41">
+                            <div>GURU RANDHAWA</div>SINGER
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/41.jpg" onclick="showpopu(42)">
+                    </div>
+                    <div class="hover-effect">
+                        <div class="appearing-card">
+                            <div>NAVEEN KUMAR</div>Advocate OF Record,Supreme Court Of India
+                        </div>
+                        <img class="mentor-circles" src="static/mentors/10.jpg" onclick="showpopu(11)">
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="ViewMore" >
+                    <div class="btn-1" style="background:white;padding:10px;border-radius:25px;cursor: pointer;" onclick="showup()">View More</div>
+                    <div class="btn-2" style="background:white;padding:10px;border-radius:25px;cursor:pointer;display:none" onclick="closeup()">Show Less</div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="mentorimgsphone" id="om2">
+
+                    <img class="mentor-circles" src="static/mentors/1.jpg" onclick="showpopu(2)">
+                    <img class="mentor-circles" src="static/mentors/2.jpg" onclick="showpopu(3)">
+                    <img class="mentor-circles" src="static/mentors/3.jpg" onclick="showpopu(4)">
+                    <img class="mentor-circles" src="static/mentors/4.jpg" onclick="showpopu(5)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/5.jpg" onclick="showpopu(6)">
+                    <img class="mentor-circles" src="static/mentors/6.jpg" onclick="showpopu(7)">
+                    <img class="mentor-circles" src="static/mentors/7.jpg" onclick="showpopu(8)">
+                    <img class="mentor-circles" src="static/mentors/8.jpg" onclick="showpopu(9)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/9.jpg" onclick="showpopu(10)">
+
+
+                    <img class="mentor-circles" src="static/mentors/10.jpg" onclick="showpopu(11)">
+                    <img class="mentor-circles" src="static/mentors/11.jpg" onclick="showpopu(12)">
+                    <img class="mentor-circles" src="static/mentors/12.jpg" onclick="showpopu(13)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/13.jpg" onclick="showpopu(14)">
+                    <img class="mentor-circles" src="static/mentors/14.jpg" onclick="showpopu(15)">
+                    <img class="mentor-circles" src="static/mentors/15.jpg" onclick="showpopu(16)">
+                    <img class="mentor-circles" src="static/mentors/16.jpg" onclick="showpopu(17)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/17.jpg" onclick="showpopu(18)">
+
+                    <img class="mentor-circles" src="static/mentors/18.jpg" onclick="showpopu(19)">
+                    <img class="mentor-circles" src="static/mentors/19.jpg" onclick="showpopu(20)">
+                    <img class="mentor-circles" src="static/mentors/20.jpg" onclick="showpopu(21)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/21.jpg" onclick="showpopu(22)">
+                    <img class="mentor-circles" src="static/mentors/22.jpg" onclick="showpopu(23)">
+                    <img class="mentor-circles" src="static/mentors/23.jpg" onclick="showpopu(24)">
+                    <img class="mentor-circles" src="static/mentors/24.jpg" onclick="showpopu(25)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/25.jpg" onclick="showpopu(26)">
+
+                    <img class="mentor-circles" src="static/mentors/26.jpg" onclick="showpopu(27)">
+                    <img class="mentor-circles" src="static/mentors/27.jpg" onclick="showpopu(28)">
+                    <img class="mentor-circles" src="static/mentors/28.jpg" onclick="showpopu(29)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/29.jpg" onclick="showpopu(30)">
+                    <img class="mentor-circles" src="static/mentors/30.jpg" onclick="showpopu(31)">
+                    <img class="mentor-circles" src="static/mentors/31.jpg" onclick="showpopu(32)">
+                    <img class="mentor-circles" src="static/mentors/32.jpg" onclick="showpopu(33)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/33.jpg" onclick="showpopu(34)">
+                    <img class="mentor-circles" src="static/mentors/34.jpg" onclick="showpopu(35)">
+
+                    <img class="mentor-circles" src="static/mentors/35.jpg" onclick="showpopu(36)">
+                    <img class="mentor-circles" src="static/mentors/36.jpg" onclick="showpopu(37)">
+                </div>
+                <div class="mentorimgsphone">
+                    <img class="mentor-circles" src="static/mentors/37.jpg" onclick="showpopu(38)">
+                    <img class="mentor-circles" src="static/mentors/38.jpg" onclick="showpopu(39)">
+                    <img class="mentor-circles" src="static/mentors/39.jpg" onclick="showpopu(40)">
+                    <img class="mentor-circles" src="static/mentors/40.jpg" onclick="showpopu(41)">
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+                <br><br><br><br>
+                <div class="pop">
+                    <div class="popup">
+                        <div class="flexvw">
+                            <img class="mentor-pop" id="imgp" src="static/mentors/12.jpg">
+                            <div style="display:flex;flex-direction: column;">
+                                <h2 class="name-head">Annapurna Devi</h2>
+                                <h4 class="jobtitle">hello</h4>
+                            </div>
+                        </div>
+                        <div class="descrip">Annapurna Devi is a renowned political figure and currently serves as the
+                            Minister of State for HRD in the Government of India. With her vast experience in the
+                            education sector, she provides valuable insights and guidance to the YUCI community.</div>
+                    </div>
+                    <button class="cross" onclick="chaluband()">
+                        &#10005;
+                    </button>
+
+                </div>
+                <span>
+                    <img src="static/iconn.jpg" class="icon2"><br><br><span class="icontext2"> YUCI&nbsp;&nbsp;|&#169;
+                        2023 YUCI</span>
+
+                </span>
+                <span class="social-media">
+                    <img class="social-logo" src="static/ig_logo.png"
+                        onclick=window.location.href="https://www.instagram.com/yuc_india/">
+                    <img class="social-logo" src="static/mail_logo.png"
+                        onclick=window.location.href="mailto:rishabh@sibss.org.in">
+                    <img class="social-logo" src="static/wp_logo.png"
+                        onclick=window.location.href="https://wa.me/918851972135?text=">
+                </span>
+                <br><br><br><br>
+
+            </div>
+
+        </div>
+        <script src="myuser.js"></script>
+        <script src="javascript.js"></script>
+</body>
+
+</html>

@@ -3,9 +3,12 @@
                 height:0;
                }
         .building{visibility:visible;}
+        .View-More{display:none;}
         
 }
 @media only screen and (max-width:515px){
+      
+        .ViewMore2{display: flex;flex-direction:column;align-items: center;justify-content: center;position:relative;top:80px;gap:10px;}
         .building{visibility:hidden;
                 height:0;}
         .im{visibility:none;height:0;}

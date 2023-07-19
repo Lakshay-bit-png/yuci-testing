@@ -335,7 +335,7 @@ for (let k=1;k<=42;k++){
     
 }
 console.log(imageme)
-document.querySelector('.btn-2').style.display='none';
+
 function showup(){
     document.querySelector('.btn-1').style.display='none';
     document.querySelector('.btn-2').style.display='flex';

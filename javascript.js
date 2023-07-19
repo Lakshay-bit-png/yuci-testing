@@ -335,5 +335,20 @@ for (let k=1;k<=42;k++){
     
 }
 console.log(imageme)
-
-
+document.querySelector('.btn-2').style.display='none';
+function showup(){
+    document.querySelector('.btn-1').style.display='none';
+    document.querySelector('.btn-2').style.display='flex';
+    var div=document.querySelectorAll('.mentorimgs')
+    div[2].style.display='flex';
+    div[3].style.display='flex'
+    div[4].style.display='flex'
+}
+function closeup(){
+    document.querySelector('.btn-2').style.display='none';
+    document.querySelector('.btn-1').style.display='flex';
+    var div=document.querySelectorAll('.mentorimgs')
+    div[2].style.display='none';
+    div[3].style.display='none'
+    div[4].style.display='none'
+}
